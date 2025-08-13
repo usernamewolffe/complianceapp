@@ -1,0 +1,26 @@
+<tr id="invitation-{{ inv.id }}">
+  <td>{{ inv.email }}</td>
+  <td>{{ inv.status }}</td>
+  <td>
+    <button
+      hx-post="{% url 'invitation_cancel' org.id inv.id %}"
+      hx-target="#invitation-{{ inv.id }}"
+      hx-swap="outerHTML"
+      hx-disabled-elt="this"
+      hx-confirm="Cancel this invitation to {{ inv.email }}?"
+      class="btn btn-outline btn-sm">
+      Cancel
+    </button>
+
+    {% if inv.is_pending %}
+    <button
+      hx-post="{% url 'invitation_resend' org.id inv.id %}"
+      hx-target="#invitation-{{ inv.id }}"
+      hx-swap="outerHTML"
+      hx-disabled-elt="this"
+      class="btn btn-secondary btn-sm">
+      Resend
+    </button>
+    {% endif %}
+  </td>
+</tr>

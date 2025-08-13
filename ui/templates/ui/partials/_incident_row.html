@@ -1,0 +1,9 @@
+<tr id="incident-{{ i.id }}">
+  <td>{{ i.title }}</td>
+  <td>{{ i.get_classification_display }}</td>
+  <td>{{ i.get_severity_display }}</td>
+  <td>{{ i.aware_at|date:"Y-m-d H:i" }}</td>
+  <td>{{ i.get_status_display }}</td>
+  <td>{% if i.deadline_at %}{{ i.deadline_at|date:"Y-m-d H:i" }}{% else %}—{% endif %}</td>
+  <td>{% if i.is_overdue %}Yes{% else %}No{% endif %}</td>
+</tr>

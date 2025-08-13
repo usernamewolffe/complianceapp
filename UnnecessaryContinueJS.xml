@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>121</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryContinueJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unnecessary 'continue' statement</problem_class>
+  <description>&lt;code&gt;continue&lt;/code&gt; is unnecessary as the last statement in a loop #loc</description>
+  <highlighted_element>continue</highlighted_element>
+  <language>JavaScript</language>
+  <offset>24</offset>
+  <length>8</length>
+</problem>
+</problems>

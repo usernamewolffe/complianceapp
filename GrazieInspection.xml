@@ -1,0 +1,890 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/compliance_app/views.py</file>
+  <line>58</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/compliance_app/views.py" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The preposition 'to' may be missing (allow someone to do something).</description>
+  <highlighted_element>create</highlighted_element>
+  <language>Python</language>
+  <offset>35</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/admin/DateTimeShortcuts.js</file>
+  <line>2</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/admin/DateTimeShortcuts.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise #loc</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>34</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js</file>
+  <line>98</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The verb 'depend' requires the preposition 'on' (or 'upon').</description>
+  <highlighted_element>depending</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>38</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/core.js</file>
+  <line>19</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/core.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use an instead of 'a' if the following word starts with a vowel sound, e.g. 'an article', 'an hour'.</description>
+  <highlighted_element>a</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>540</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Possible typo detected.</description>
+  <highlighted_element>class2type</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1272</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Possible typo: you repeated a word</description>
+  <highlighted_element>regex</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>14</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1273</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Possible typo: you repeated a word</description>
+  <highlighted_element>Regex</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>4</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1901</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Unpaired symbol: '&quot;' seems to be missing</description>
+  <highlighted_element>&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>5</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>2178</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>A determiner may be missing.</description>
+  <highlighted_element>closest</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3305</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>Consider shortening this phrase to just 'whether', unless you mean 'regardless of whether'. #loc</description>
+  <highlighted_element>whether or not</highlighted_element>
+  <language>JavaScript</language>
+  <offset>38</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3830</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use a comma before 'or' if it connects two independent clauses (unless they are closely connected and short).</description>
+  <highlighted_element>or</highlighted_element>
+  <language>JavaScript</language>
+  <offset>37</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>4669</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>This phrase is redundant. Consider using outside. #loc</description>
+  <highlighted_element>outside of</highlighted_element>
+  <language>JavaScript</language>
+  <offset>68</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>5949</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use a comma before 'but' if it connects two independent clauses (unless they are closely connected and short).</description>
+  <highlighted_element>but</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>17</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>6319</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use a comma before 'and' if it connects two independent clauses (unless they are closely connected and short).</description>
+  <highlighted_element>and</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>59</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>6904</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use a comma before 'but' if it connects two independent clauses (unless they are closely connected and short).</description>
+  <highlighted_element>but</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>7</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>7110</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Did you mean it's (short for 'it is') instead of 'its' (possessive pronoun)?</description>
+  <highlighted_element>its</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>21</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>8285</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>A comma may be missing after the conjunctive/linking adverb 'Otherwise'.</description>
+  <highlighted_element>Otherwise</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>7</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9182</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The word &quot;deep&quot; is an adjective and doesn't fit in this context. Did you mean the adverb deeply?</description>
+  <highlighted_element>deep</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>35</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9192</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>This word is normally spelled with a hyphen.</description>
+  <highlighted_element>full fledged</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>14</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9710</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use a comma before 'but' if it connects two independent clauses (unless they are closely connected and short).</description>
+  <highlighted_element>but</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>39</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>115</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>67</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>379</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>It seems that a pronoun is missing.</description>
+  <highlighted_element>if</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>35</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>393</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>57</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>433</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>It seems that a pronoun is missing.</description>
+  <highlighted_element>If</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>14</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>464</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>You should probably use are or were.</description>
+  <highlighted_element>is</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>19</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>780</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Possible spelling mistake found.</description>
+  <highlighted_element>Id</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>28</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>3526</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>This word is normally spelled as one.</description>
+  <highlighted_element>pre-loaded</highlighted_element>
+  <language>JavaScript</language>
+  <offset>31</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>4365</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise #loc</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>5301</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>This word is normally spelled as one.</description>
+  <highlighted_element>Pre-load</highlighted_element>
+  <language>JavaScript</language>
+  <offset>7</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>5301</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise #loc</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>5417</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise #loc</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>29</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>6810</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise #loc</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>18</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>46</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>23</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>46</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>90</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>47</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>12</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>241</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise #loc</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>85</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>260</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>This word is normally spelled with a hyphen.</description>
+  <highlighted_element>Case sensitive</highlighted_element>
+  <language>JavaScript</language>
+  <offset>9</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>361</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>This word is normally spelled with a hyphen.</description>
+  <highlighted_element>case insensitive</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>15</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>497</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The name of this text encoding standard needs to be capitalized.</description>
+  <highlighted_element>unicode</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>27</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>719</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Unpaired symbol: ')' seems to be missing</description>
+  <highlighted_element>(</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>19</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1001</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The name of this text encoding standard needs to be capitalized.</description>
+  <highlighted_element>unicode</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1145</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use a comma before 'or' if it connects two independent clauses (unless they are closely connected and short).</description>
+  <highlighted_element>or</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>43</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1171</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="INFORMATION" attribute_key="INFORMATION_ATTRIBUTES">Grammar</problem_class>
+  <description>This phrase is redundant. Consider using outside. #loc</description>
+  <highlighted_element>outside of</highlighted_element>
+  <language>JavaScript</language>
+  <offset>85</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1280</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Unpaired symbol: '}' seems to be missing</description>
+  <highlighted_element>{</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>71</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1320</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>If a new sentence starts here, add a space and start with an uppercase letter.</description>
+  <highlighted_element>index</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>17</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1648</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>15</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1652</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Possible typo: you repeated a word</description>
+  <highlighted_element>the the</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>24</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1772</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1772</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>25</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1773</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>11</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1773</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Two consecutive dots</description>
+  <highlighted_element>..</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>30</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2394</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Unpaired symbol: ')' seems to be missing</description>
+  <highlighted_element>(</highlighted_element>
+  <language>JavaScript</language>
+  <offset>61</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2396</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Unpaired symbol: ')' seems to be missing</description>
+  <highlighted_element>(</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2882</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use a comma before 'or' if it connects two independent clauses (unless they are closely connected and short).</description>
+  <highlighted_element>or</highlighted_element>
+  <language>JavaScript</language>
+  <offset>34</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>3512</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The official spelling of this programming framework is Node.js.</description>
+  <highlighted_element>NodeJS</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>13</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>3825</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Did you mean thanks?</description>
+  <highlighted_element>Thank's</highlighted_element>
+  <language>JavaScript</language>
+  <offset>3</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>4000</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Please check the order of words and the punctuation of this sentence.</description>
+  <highlighted_element>haven't it</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>70</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>4896</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The name of this text encoding standard needs to be capitalized.</description>
+  <highlighted_element>unicode</highlighted_element>
+  <language>JavaScript</language>
+  <offset>25</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>85</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>A determiner may be missing.</description>
+  <highlighted_element>in best</highlighted_element>
+  <language>JavaScript</language>
+  <offset>29</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>685</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Please verify. Did you mean it or the IT (= information technology)?</description>
+  <highlighted_element>the it</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>8</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>1017</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>It seems that an article is missing.</description>
+  <highlighted_element>bit</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>43</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>1149</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Use a comma before 'and' if it connects two independent clauses (unless they are closely connected and short).</description>
+  <highlighted_element>and</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>9</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>4761</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>A comma may be missing after the conjunctive/linking adverb 'However'.</description>
+  <highlighted_element>However</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>21</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js</file>
+  <line>3</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The official spelling of this programming framework is Node.js.</description>
+  <highlighted_element>NodeJS</highlighted_element>
+  <language>JavaScript</language>
+  <offset>32</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js</file>
+  <line>4</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The official spelling of this programming framework is Node.js.</description>
+  <highlighted_element>NodeJS</highlighted_element>
+  <language>JavaScript</language>
+  <offset>40</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js</file>
+  <line>7</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The official spelling of this programming framework is Node.js.</description>
+  <highlighted_element>nodejs</highlighted_element>
+  <language>JavaScript</language>
+  <offset>51</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js</file>
+  <line>220</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The usual collocation for &quot;insists&quot; is &quot;on&quot;, not &quot;to&quot;. Did you mean insists on calling?</description>
+  <highlighted_element>insists to call</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>63</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js</file>
+  <line>261</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>If a new sentence starts here, add a space and start with an uppercase letter.</description>
+  <highlighted_element>authorize</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>88</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js</file>
+  <line>286</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>If a new sentence starts here, add a space and start with an uppercase letter.</description>
+  <highlighted_element>authorize</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>97</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>993</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>This expression is usually spelled with a hyphen.</description>
+  <highlighted_element>non existing</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>31</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>1206</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Did you mean ensure (=make sure)? 'Insure' means 'pay money to insurance company'.</description>
+  <highlighted_element>insure</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>3</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/csrf.js</file>
+  <line>27</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/csrf.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Possible typo: you repeated a word</description>
+  <highlighted_element>URL</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>44</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/csrf.js</file>
+  <line>28</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/csrf.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>Possible typo: you repeated a word</description>
+  <highlighted_element>url</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>5</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/csrf.js</file>
+  <line>37</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/csrf.js" />
+  <problem_class id="GrazieInspection" severity="GRAMMAR_ERROR" attribute_key="GRAMMAR_ERROR">Grammar</problem_class>
+  <description>The abbreviation i.e. (= that is) requires two periods.</description>
+  <highlighted_element>i.e</highlighted_element>
+  <language>JavaScript</language>
+  <offset>63</offset>
+  <length>3</length>
+</problem>
+</problems>

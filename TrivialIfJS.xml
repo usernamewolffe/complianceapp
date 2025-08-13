@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>724</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="TrivialIfJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+  <highlighted_element>if</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>2</length>
+</problem>
+</problems>

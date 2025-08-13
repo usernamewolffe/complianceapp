@@ -1,0 +1,218 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js</file>
+  <line>40</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>1</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>44</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/core.js</file>
+  <line>173</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/core.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;string&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;number&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>date[i]</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>46</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1528</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;any&lt;/span&gt;&lt;span style=&quot;&quot;&gt;[]&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;ArrayLike&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;Type &lt;code&gt;&lt;span style=&quot;&quot;&gt;Array&lt;/span&gt;&lt;/code&gt; is not assignable to type &lt;code&gt;&lt;span style=&quot;&quot;&gt;ArrayLike&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>slice.apply( this )</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>43</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3018</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;any&lt;/span&gt;&lt;span style=&quot;&quot;&gt;[]&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;ArrayLike&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;Type &lt;code&gt;&lt;span style=&quot;&quot;&gt;Array&lt;/span&gt;&lt;/code&gt; is not assignable to type &lt;code&gt;&lt;span style=&quot;&quot;&gt;ArrayLike&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>matched</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>65</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3922</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 3</description>
+  <highlighted_element>( elems[ i ], key )</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>35</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3937</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 3</description>
+  <highlighted_element>( elems[ 0 ], key )</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>16</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9687</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 2</description>
+  <highlighted_element>ajaxPrefilter</highlighted_element>
+  <language>JavaScript</language>
+  <offset>7</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9818</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 2</description>
+  <highlighted_element>ajaxTransport</highlighted_element>
+  <language>JavaScript</language>
+  <offset>7</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9907</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 1</description>
+  <highlighted_element>()</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>25</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9963</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 2</description>
+  <highlighted_element>ajaxPrefilter</highlighted_element>
+  <language>JavaScript</language>
+  <offset>7</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>1512</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 1</description>
+  <highlighted_element>(self.$selection[0], document.activeElement)</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>19</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>4275</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 1</description>
+  <highlighted_element>contains</highlighted_element>
+  <language>JavaScript</language>
+  <offset>30</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>4523</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 1</description>
+  <highlighted_element>(document.body, $offsetParent[0])</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>16</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>3182</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 1</description>
+  <highlighted_element>(iteratorWithReturn, function () { throw 2; })</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>12</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js</file>
+  <line>154</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 3</description>
+  <highlighted_element>(savedAuth, specURL)</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>27</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js</file>
+  <line>369</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-init.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 3</description>
+  <highlighted_element>(savedAuth, url)</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>27</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>1201</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>Invalid number of arguments, expected 1</description>
+  <highlighted_element>()</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>25</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>1251</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;&quot;&gt;Mixed&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>value</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+</problems>

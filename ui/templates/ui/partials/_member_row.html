@@ -1,0 +1,37 @@
+<tr id="member-{{ m.id }}">
+  <td>{{ m.user.get_full_name|default:m.user.username }}</td>
+
+  <td>
+    <select
+      name="role"
+      hx-patch="{% url 'org_member_update' org.id m.id %}"
+      hx-target="#member-{{ m.id }}"
+      hx-swap="outerHTML"
+      hx-disabled-elt="this">
+      <option value="owner"  {% if m.role == "owner" %}selected{% endif %}>Owner</option>
+      <option value="admin"  {% if m.role == "admin" %}selected{% endif %}>Admin</option>
+      <option value="member" {% if m.role == "member" %}selected{% endif %}>Member</option>
+    </select>
+  </td>
+
+  <td>
+    <form
+      hx-post="{% url 'org_member_toggle' org.id m.id %}"
+      hx-target="#member-{{ m.id }}"
+      hx-swap="outerHTML"
+      hx-disabled-elt="button"
+      {% if m.is_active %}
+        hx-vals='{"is_active": false}'
+        hx-confirm="Deactivate {{ m.user.get_full_name|default:m.user.username }}? They will immediately lose access."
+      {% else %}
+        hx-vals='{"is_active": true}'
+        hx-confirm="Reactivate {{ m.user.get_full_name|default:m.user.username }}?"
+      {% endif %}
+    >
+      {% csrf_token %}
+      <button class="btn btn-outline btn-sm">
+        {% if m.is_active %}Deactivate{% else %}Reactivate{% endif %}
+      </button>
+    </form>
+  </td>
+</tr>

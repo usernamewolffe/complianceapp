@@ -1,0 +1,254 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/css/widgets.css</file>
+  <line>68</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/css/widgets.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property border is overwritten #loc</description>
+  <highlighted_element>border: 1px solid var(--border-color)</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/css/widgets.css</file>
+  <line>69</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/css/widgets.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property border-width overwrites property border #loc</description>
+  <highlighted_element>border-width: 0 1px</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property text-decoration duplicates property text-decoration #loc</description>
+  <highlighted_element>text-decoration:underline dotted</highlighted_element>
+  <language>CSS</language>
+  <offset>835</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property font-weight is overwritten #loc</description>
+  <highlighted_element>font-weight:inherit</highlighted_element>
+  <language>CSS</language>
+  <offset>901</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property font-weight overwrites property font-weight #loc</description>
+  <highlighted_element>font-weight:bolder</highlighted_element>
+  <language>CSS</language>
+  <offset>921</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property overflow-x is overwritten #loc</description>
+  <highlighted_element>overflow-x:auto</highlighted_element>
+  <language>CSS</language>
+  <offset>27046</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property overflow-y is overwritten #loc</description>
+  <highlighted_element>overflow-y:hidden</highlighted_element>
+  <language>CSS</language>
+  <offset>27062</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property overflow overwrites property overflow-x #loc</description>
+  <highlighted_element>overflow:scroll</highlighted_element>
+  <language>CSS</language>
+  <offset>27080</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property overflow overwrites property overflow-y #loc</description>
+  <highlighted_element>overflow:scroll</highlighted_element>
+  <language>CSS</language>
+  <offset>27080</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property word-break is overwritten #loc</description>
+  <highlighted_element>word-break:break-all</highlighted_element>
+  <language>CSS</language>
+  <offset>121197</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property word-break overwrites property word-break #loc</description>
+  <highlighted_element>word-break:break-word</highlighted_element>
+  <language>CSS</language>
+  <offset>121218</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property color is overwritten #loc</description>
+  <highlighted_element>color:#41444e</highlighted_element>
+  <language>CSS</language>
+  <offset>132158</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property color overwrites property color #loc</description>
+  <highlighted_element>color:#3b4151</highlighted_element>
+  <language>CSS</language>
+  <offset>132172</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property font-weight is overwritten #loc</description>
+  <highlighted_element>font-weight:300</highlighted_element>
+  <language>CSS</language>
+  <offset>132855</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property font-weight overwrites property font-weight #loc</description>
+  <highlighted_element>font-weight:600</highlighted_element>
+  <language>CSS</language>
+  <offset>132871</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property font-weight is overwritten #loc</description>
+  <highlighted_element>font-weight:300</highlighted_element>
+  <language>CSS</language>
+  <offset>138051</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property font-weight overwrites property font-weight #loc</description>
+  <highlighted_element>font-weight:600</highlighted_element>
+  <language>CSS</language>
+  <offset>138067</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property color is overwritten #loc</description>
+  <highlighted_element>color:red</highlighted_element>
+  <language>CSS</language>
+  <offset>143187</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property color overwrites property color #loc</description>
+  <highlighted_element>color:#3b4151</highlighted_element>
+  <language>CSS</language>
+  <offset>143197</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property word-break is overwritten #loc</description>
+  <highlighted_element>word-break:break-all</highlighted_element>
+  <language>CSS</language>
+  <offset>144712</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssOverwrittenProperties" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Overwritten property</problem_class>
+  <description>Property word-break overwrites property word-break #loc</description>
+  <highlighted_element>word-break:break-word</highlighted_element>
+  <language>CSS</language>
+  <offset>144733</offset>
+  <length>21</length>
+</problem>
+</problems>

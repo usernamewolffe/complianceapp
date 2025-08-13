@@ -1,0 +1,9 @@
+<div style="display:flex;align-items:center;gap:.5rem">
+  <h1 style="margin:0">{{ org.name }}</h1>
+  <button class="btn"
+          hx-get="{% url 'org-name-edit' org.id %}"
+          hx-target="#org-name-block"
+          hx-swap="outerHTML">
+    Rename
+  </button>
+</div>

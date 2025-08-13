@@ -1,0 +1,37 @@
+{% extends "ui/base.html" %}
+{% block title %}{{ org.name }} · Org{% endblock %}
+
+{% block content %}
+
+<section class="section">
+  <h2>Members</h2>
+  <div id="members-block"
+       hx-get="{% url 'org-members-block' org.id %}"
+       hx-trigger="load"
+       hx-target="#members-block"
+       hx-swap="outerHTML"></div>
+</section>
+
+<hr class="divider" aria-hidden="true" />
+
+<section class="section">
+  <h2>Incidents</h2>
+  <div id="incidents-block"
+       hx-get="{% url 'incidents:incidents-block' org.id %}"
+       hx-trigger="load"
+       hx-target="#incidents-block"
+       hx-swap="outerHTML"></div>
+</section>
+
+<hr class="divider" aria-hidden="true" />
+
+<section class="section" id="records">
+  <h2>Compliance Records</h2>
+  <div id="records-block"
+       hx-get="{% url 'compliance_ui:org-records-block' org.id %}"
+       hx-trigger="load"
+       hx-target="#records-block"
+       hx-swap="outerHTML"></div>
+</section>
+
+{% endblock %}

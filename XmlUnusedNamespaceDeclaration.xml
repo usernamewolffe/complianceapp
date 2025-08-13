@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/img/calendar-icons.svg</file>
+  <line>14</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/img/calendar-icons.svg" />
+  <problem_class id="XmlUnusedNamespaceDeclaration" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused schema declaration</problem_class>
+  <description>Namespace declaration is never used</description>
+  <highlighted_element>xmlns:svg=&quot;http://www.w3.org/2000/svg&quot;</highlighted_element>
+  <language>SVG</language>
+  <offset>3</offset>
+  <length>38</length>
+</problem>
+</problems>

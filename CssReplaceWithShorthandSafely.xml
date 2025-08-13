@@ -1,0 +1,158 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/css/changelists.css</file>
+  <line>313</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/css/changelists.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'margin' shorthand</description>
+  <highlighted_element>margin: 0</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/css/changelists.css</file>
+  <line>314</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/css/changelists.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'margin' shorthand</description>
+  <highlighted_element>margin-left: 10px</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css</file>
+  <line>354</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'border-radius' shorthand</description>
+  <highlighted_element>border-radius: 0</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css</file>
+  <line>355</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'border-radius' shorthand</description>
+  <highlighted_element>border-top-left-radius: 4px</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css</file>
+  <line>356</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'border-radius' shorthand</description>
+  <highlighted_element>border-bottom-left-radius: 4px</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/bootstrap-tweaks.css</file>
+  <line>100</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/bootstrap-tweaks.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'background' shorthand</description>
+  <highlighted_element>background: url(&quot;../img/grid.png&quot;) repeat-x</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>43</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/bootstrap-tweaks.css</file>
+  <line>101</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/bootstrap-tweaks.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'background' shorthand</description>
+  <highlighted_element>background-attachment: fixed</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css</file>
+  <line>115</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'padding' shorthand</description>
+  <highlighted_element>padding-top: 10px</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css</file>
+  <line>116</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'padding' shorthand</description>
+  <highlighted_element>padding-bottom: 10px</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css</file>
+  <line>117</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'padding' shorthand</description>
+  <highlighted_element>padding-right: 10px</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css</file>
+  <line>118</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'padding' shorthand</description>
+  <highlighted_element>padding-left: 25px</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css</file>
+  <line>289</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'padding' shorthand</description>
+  <highlighted_element>padding: 0</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css</file>
+  <line>290</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/css/base.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'padding' shorthand</description>
+  <highlighted_element>padding-left: 20px</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>18</length>
+</problem>
+</problems>

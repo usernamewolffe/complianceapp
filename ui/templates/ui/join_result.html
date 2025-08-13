@@ -1,0 +1,12 @@
+{% extends "ui/base.html" %}
+{% block title %}Join{% endblock %}
+{% block content %}
+  {% if error %}
+    <h1>Couldn’t join</h1>
+    <p class="muted">{{ error }}</p>
+  {% else %}
+    <h1>All set!</h1>
+    <p>You’ve joined <strong>{{ org.name }}</strong>.</p>
+    <p><a class="btn" href="{% url 'org-detail' org.id %}">Go to org</a></p>
+  {% endif %}
+{% endblock %}

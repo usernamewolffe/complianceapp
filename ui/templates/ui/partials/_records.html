@@ -1,0 +1,59 @@
+<div id="records-inner">
+  {% if ok %}
+    <div style="margin:0 0 .75rem;padding:.5rem .75rem;border:1px solid #a3cfbb;background:#d1e7dd;border-radius:.5rem;color:#0f5132">
+      Record saved.
+    </div>
+  {% endif %}
+
+  <table>
+    <thead>
+      <tr>
+        <th>Requirement</th>
+        <th>Status</th>
+        <th>Last updated</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in records %}
+        <tr id="record-{{ r.id }}">
+          <td>{{ r.requirement }}</td>
+          <td>{{ r.get_status_display|default:r.status }}</td>
+          <td>{{ r.last_updated|date:"Y-m-d H:i" }}</td>
+          <td>
+            <button class="btn btn-link"
+                    hx-get="{% url 'compliance_ui:record-edit' org.id r.id %}"
+                    hx-target="#record-{{ r.id }}"
+                    hx-swap="outerHTML">Edit</button>
+            <button class="btn btn-link"
+                    hx-post="{% url 'compliance_ui:record-delete' org.id r.id %}"
+                    hx-confirm="Delete this record?"
+                    hx-target="#records-block"
+                    hx-swap="outerHTML">Delete</button>
+          </td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="4" class="muted">No compliance records yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:1rem">Add record</h3>
+  <form
+      hx-post="{% url 'compliance_ui:record-create' org.id %}"
+      hx-target="#records-block"
+      hx-swap="outerHTML"
+      style="display:grid;grid-template-columns:1fr 220px;gap:.5rem;align-items:center">
+    {% csrf_token %}
+    <input name="requirement" placeholder="Requirement" required
+           style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
+    <select name="status" style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
+      <option value="todo">To do</option>
+      <option value="in_progress">In progress</option>
+      <option value="done">Done</option>
+    </select>
+    <div style="grid-column:1 / -1">
+      <button class="btn" type="submit">Add</button>
+    </div>
+  </form>
+</div>

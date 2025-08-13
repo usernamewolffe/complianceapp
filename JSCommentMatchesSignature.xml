@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>1462</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="JSCommentMatchesSignature" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched JSDoc and function signature</problem_class>
+  <description>Parameter without name described in JSDoc does not appear in function signature</description>
+  <highlighted_element>{string}</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>1465</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="JSCommentMatchesSignature" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched JSDoc and function signature</problem_class>
+  <description>Parameter operator is not described in JSDoc</description>
+  <highlighted_element>operator</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+</problems>

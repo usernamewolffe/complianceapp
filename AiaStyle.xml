@@ -1,0 +1,110 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/admin/DateTimeShortcuts.js</file>
+  <line>2</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/admin/DateTimeShortcuts.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>34</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3305</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>Consider shortening this phrase to just 'whether', unless you mean 'regardless of whether'.</description>
+  <highlighted_element>whether or not</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>38</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>4669</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>This phrase is redundant. Consider using outside.</description>
+  <highlighted_element>outside of</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>68</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>4365</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>5301</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>5417</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>JavaScript</language>
+  <offset>29</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>6810</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>241</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>Consider removing &quot;of&quot; to be more concise</description>
+  <highlighted_element>all of the</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>85</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1171</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="AiaStyle" severity="TYPO" attribute_key="TYPO">Style</problem_class>
+  <description>This phrase is redundant. Consider using outside.</description>
+  <highlighted_element>outside of</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>85</offset>
+  <length>10</length>
+</problem>
+</problems>

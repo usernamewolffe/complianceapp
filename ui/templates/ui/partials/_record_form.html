@@ -1,0 +1,38 @@
+{% comment %}inline edit form for a record; replaces the row while editing{% endcomment %}
+<tr id="rec-{{ rec.id }}">
+  <td colspan="3">
+    <form method="post"
+          action="{% url 'record-edit' rec.id %}"
+          hx-post="{% url 'record-edit' rec.id %}"
+          hx-target="#rec-{{ rec.id }}"
+          hx-swap="outerHTML"
+          style="display:flex;gap:.5rem;align-items:flex-start;flex-wrap:wrap">
+      {% csrf_token %}
+
+      <textarea name="requirement" rows="3" style="flex:1;min-width:360px;padding:.5rem;border:1px solid #ced4da;border-radius:.5rem">{{ rec.requirement }}</textarea>
+
+      <select name="status" style="padding:.5rem;border:1px solid #ced4da;border-radius:.5rem">
+        <option value="pending" {% if rec.status == "pending" %}selected{% endif %}>Pending</option>
+        <option value="in_progress" {% if rec.status == "in_progress" %}selected{% endif %}>In progress</option>
+        <option value="done" {% if rec.status == "done" %}selected{% endif %}>Done</option>
+      </select>
+
+      <div style="display:flex;gap:.5rem">
+        <button type="submit" class="btn">Save</button>
+        <button type="button"
+                class="btn"
+                hx-get="{% url 'record-row' rec.id %}"
+                hx-target="#rec-{{ rec.id }}"
+                hx-swap="outerHTML">
+          Cancel
+        </button>
+      </div>
+    </form>
+
+    {% if error %}
+      <div class="muted" style="color:#842029;background:#f8d7da;border:1px solid #f5c2c7;padding:.5rem;border-radius:.5rem;margin-top:.5rem">
+        {{ error }}
+      </div>
+    {% endif %}
+  </td>
+</tr>

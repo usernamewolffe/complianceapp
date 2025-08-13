@@ -1,0 +1,63 @@
+{# Incidents list + quick-create #}
+<div id="incidents-block">
+  {% if ok %}
+    <div style="margin:0 0 .75rem;padding:.5rem .75rem;border:1px solid #a3cfbb;background:#d1e7dd;border-radius:.5rem;color:#0f5132">
+      Incident saved.
+    </div>
+  {% endif %}
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Classification</th>
+        <th>Severity</th>
+        <th>Aware at</th>
+        <th>Status</th>
+        <th>Disclosure Deadline</th>
+        <th>Overdue?</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in incidents %}
+        <tr>
+          <td>{{ i.title }}</td>
+            <td><a href="{% url 'incidents:detail' org.id i.id %}">{{ i.title }}</a></td>
+          <td>{{ i.get_classification_display }}</td>
+          <td>{{ i.get_severity_display }}</td>
+          <td>{{ i.aware_at|date:"Y-m-d H:i" }}</td>
+          <td>{{ i.get_status_display }}</td>
+          <td>{% if i.deadline_at %}{{ i.deadline_at|date:"Y-m-d H:i" }}{% else %}—{% endif %}</td>
+          <td>{% if i.is_overdue %}Yes{% else %}No{% endif %}</td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="7" class="muted">No incidents yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:1rem">Add incident</h3>
+<form
+  hx-post="{% url 'incidents:incident-create' org.id %}"
+  hx-target="#incidents-block"
+  hx-swap="outerHTML"
+  style="display:grid;grid-template-columns:1fr 180px 160px 220px;gap:.5rem;align-items:center">
+
+    {% csrf_token %}
+    <input name="title" placeholder="Short title" required
+           style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
+    <select name="classification" style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
+      {% for value,label in classifications %}<option value="{{ value }}">{{ label }}</option>{% endfor %}
+    </select>
+    <select name="severity" style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
+      {% for value,label in severities %}<option value="{{ value }}">{{ label }}</option>{% endfor %}
+    </select>
+    <input type="datetime-local" name="aware_at"
+           style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
+    <textarea name="description" rows="3" placeholder="Details"
+              style="grid-column:1 / -1;padding:.45rem;border:1px solid #ced4da;border-radius:.5rem"></textarea>
+    <div style="grid-column:1 / -1">
+      <button class="btn" type="submit">Create incident</button>
+    </div>
+  </form>
+</div>

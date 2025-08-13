@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/insQ.js</file>
+  <line>94</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/insQ.js" />
+  <problem_class id="PointlessBooleanExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless statement or boolean expression</problem_class>
+  <description>Can be simplified to e.nodeType === 1 #loc</description>
+  <highlighted_element>e !== undefined &amp;&amp; e.nodeType === 1</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>16</offset>
+  <length>35</length>
+</problem>
+</problems>

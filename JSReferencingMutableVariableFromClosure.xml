@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>7363</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSReferencingMutableVariableFromClosure" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Referencing mutable variable from closure</problem_class>
+  <description>Mutable variable is accessible from closure</description>
+  <highlighted_element>hidden</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>10</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>7363</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSReferencingMutableVariableFromClosure" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Referencing mutable variable from closure</problem_class>
+  <description>Mutable variable is accessible from closure</description>
+  <highlighted_element>hidden</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>10</offset>
+  <length>6</length>
+</problem>
+</problems>

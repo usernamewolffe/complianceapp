@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>1209</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="JSValidateJSDoc" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Syntax errors and unresolved references in JSDoc</problem_class>
+  <description>Unresolved variable or type 'Mixed'</description>
+  <highlighted_element>Mixed</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>11</offset>
+  <length>5</length>
+</problem>
+</problems>

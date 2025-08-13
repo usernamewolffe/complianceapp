@@ -1,0 +1,42 @@
+<root>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/orgs/views.py" line="280" start="10739" end="11166" />
+  <fragment file="file://$PROJECT_DIR$/orgs/views.py" line="303" start="11591" end="12003" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/orgs/views.py" line="327" start="12532" end="13515" />
+  <fragment file="file://$PROJECT_DIR$/orgs/views.py" line="328" start="12608" end="13515" />
+  <fragment file="file://$PROJECT_DIR$/ui/views.py" line="637" start="22289" end="23190" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/autocomplete.css" line="60" start="1932" end="2180" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" line="149" start="4239" end="4507" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" line="336" start="12027" end="12295" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" line="1" start="3487" end="3673" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" line="1" start="10291" end="10477" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/dark_mode.css" line="2" start="48" end="854" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/dark_mode.css" line="39" start="885" end="1625" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" line="101" start="2834" end="3108" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" line="1" start="2303" end="2514" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" line="118" start="3110" end="3452" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" line="1" start="2514" end="2813" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" line="149" start="4156" end="4507" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" line="1" start="3405" end="3673" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" line="321" start="11316" end="11550" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" line="1" start="9691" end="9870" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" line="336" start="11944" end="12295" />
+  <fragment file="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" line="1" start="10209" end="10477" />
+</duplicate>
+</root>

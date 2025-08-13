@@ -1,0 +1,33 @@
+{% extends "ui/base.html" %}
+{% block title %}Dashboard · NIS2{% endblock %}
+{% block content %}
+  <h1>Dashboard</h1>
+
+  <h2>Your organisations</h2>
+  {% if orgs %}
+    <ul>
+      {% for o in orgs %}
+        <li><a href="{% url 'org-detail' o.id %}">{{ o.name }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">
+      No organisations yet.
+      <a href="/admin/orgs/org/add/">Create one in admin</a>.
+    </p>
+  {% endif %}
+
+  <h2 style="margin-top:1rem">Recent records</h2>
+  {% if records %}
+    <ul>
+      {% for r in records %}
+        <li>
+          <a href="{% url 'org-detail' r.org.id %}">{{ r.org.name }}</a> —
+          {{ r.status }} — {{ r.requirement|truncatechars:80 }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">No records yet.</p>
+  {% endif %}
+{% endblock %}

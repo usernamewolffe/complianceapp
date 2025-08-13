@@ -1,0 +1,338 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/compliance/admin.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/compliance/admin.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.contrib import admin&lt;/code&gt;</description>
+  <highlighted_element>from django.contrib import admin</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/compliance/models.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/compliance/models.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.db import models&lt;/code&gt;</description>
+  <highlighted_element>from django.db import models</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/compliance/tests.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/compliance/tests.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.test import TestCase&lt;/code&gt;</description>
+  <highlighted_element>from django.test import TestCase</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/compliance/views.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/compliance/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.shortcuts import render&lt;/code&gt;</description>
+  <highlighted_element>from django.shortcuts import render</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/compliance_app/tests.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/compliance_app/tests.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.test import TestCase&lt;/code&gt;</description>
+  <highlighted_element>from django.test import TestCase</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/config/settings/prod.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/config/settings/prod.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from .base import *&lt;/code&gt;</description>
+  <highlighted_element>from .base import *</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/core/admin.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/core/admin.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.contrib import admin&lt;/code&gt;</description>
+  <highlighted_element>from django.contrib import admin</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/core/models.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/core/models.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.db import models&lt;/code&gt;</description>
+  <highlighted_element>from django.db import models</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/core/tests.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/core/tests.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.test import TestCase&lt;/code&gt;</description>
+  <highlighted_element>from django.test import TestCase</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/admin.py</file>
+  <line>13</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/admin.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.contrib import admin&lt;/code&gt;</description>
+  <highlighted_element>from django.contrib import admin</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/tests.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/tests.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.test import TestCase&lt;/code&gt;</description>
+  <highlighted_element>from django.test import TestCase</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/serializers.py</file>
+  <line>16</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/serializers.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;Org&lt;/code&gt;</description>
+  <highlighted_element>Org</highlighted_element>
+  <language>Python</language>
+  <offset>20</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/tests.py</file>
+  <line>75</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/tests.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.test import TestCase&lt;/code&gt;</description>
+  <highlighted_element>from django.test import TestCase</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/views.py</file>
+  <line>6</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;JsonResponse&lt;/code&gt;</description>
+  <highlighted_element>JsonResponse</highlighted_element>
+  <language>Python</language>
+  <offset>24</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/regs/admin.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/regs/admin.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.contrib import admin&lt;/code&gt;</description>
+  <highlighted_element>from django.contrib import admin</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/regs/models.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/regs/models.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.db import models&lt;/code&gt;</description>
+  <highlighted_element>from django.db import models</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/regs/tests.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/regs/tests.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.test import TestCase&lt;/code&gt;</description>
+  <highlighted_element>from django.test import TestCase</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/regs/views.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/regs/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.shortcuts import render&lt;/code&gt;</description>
+  <highlighted_element>from django.shortcuts import render</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/admin.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/admin.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.contrib import admin&lt;/code&gt;</description>
+  <highlighted_element>from django.contrib import admin</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/models.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/models.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.db import models&lt;/code&gt;</description>
+  <highlighted_element>from django.db import models</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/tests.py</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/tests.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.test import TestCase&lt;/code&gt;</description>
+  <highlighted_element>from django.test import TestCase</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/views.py</file>
+  <line>3</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.contrib.auth.decorators import login_required&lt;/code&gt;</description>
+  <highlighted_element>from django.contrib.auth.decorators import login_required</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>57</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/views.py</file>
+  <line>5</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;HttpResponseForbidden&lt;/code&gt;</description>
+  <highlighted_element>HttpResponseForbidden</highlighted_element>
+  <language>Python</language>
+  <offset>38</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/views.py</file>
+  <line>6</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;render&lt;/code&gt;</description>
+  <highlighted_element>render</highlighted_element>
+  <language>Python</language>
+  <offset>29</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/views.py</file>
+  <line>6</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;redirect&lt;/code&gt;</description>
+  <highlighted_element>redirect</highlighted_element>
+  <language>Python</language>
+  <offset>37</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/views.py</file>
+  <line>11</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;require_POST&lt;/code&gt;</description>
+  <highlighted_element>require_POST</highlighted_element>
+  <language>Python</language>
+  <offset>4</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/views.py</file>
+  <line>14</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from orgs.models import Org, Membership, OrgInvite&lt;/code&gt;</description>
+  <highlighted_element>from orgs.models import Org, Membership, OrgInvite</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>50</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/views.py</file>
+  <line>21</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/views.py" />
+  <problem_class id="PyUnusedImportsInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused imports</problem_class>
+  <description>Unused import statement &lt;code&gt;from django.contrib.auth.decorators import login_required&lt;/code&gt;</description>
+  <highlighted_element>from django.contrib.auth.decorators import login_required</highlighted_element>
+  <language>Python</language>
+  <offset>0</offset>
+  <length>57</length>
+</problem>
+</problems>

@@ -1,0 +1,194 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html</file>
+  <line>47</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>input</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html</file>
+  <line>49</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>select</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html</file>
+  <line>52</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>select</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html</file>
+  <line>55</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>input</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html</file>
+  <line>57</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_incidents.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>textarea</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_member_row.html</file>
+  <line>5</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_member_row.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>select</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_members.html</file>
+  <line>41</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_members.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>select</highlighted_element>
+  <language>XML</language>
+  <offset>17</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_members.html</file>
+  <line>145</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_members.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>input</highlighted_element>
+  <language>XML</language>
+  <offset>7</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_members.html</file>
+  <line>147</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_members.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>select</highlighted_element>
+  <language>XML</language>
+  <offset>7</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_org_name_form.html</file>
+  <line>8</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_org_name_form.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>input</highlighted_element>
+  <language>XML</language>
+  <offset>3</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_record_create_form.html</file>
+  <line>10</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_record_create_form.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>textarea</highlighted_element>
+  <language>XML</language>
+  <offset>3</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_record_create_form.html</file>
+  <line>13</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_record_create_form.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>select</highlighted_element>
+  <language>XML</language>
+  <offset>3</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_record_form.html</file>
+  <line>12</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_record_form.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>textarea</highlighted_element>
+  <language>XML</language>
+  <offset>7</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_record_form.html</file>
+  <line>14</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_record_form.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>select</highlighted_element>
+  <language>XML</language>
+  <offset>7</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_records.html</file>
+  <line>48</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_records.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>input</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_records.html</file>
+  <line>50</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_records.html" />
+  <problem_class id="HtmlFormInputWithoutLabel" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing associated label</problem_class>
+  <description>Missing associated label</description>
+  <highlighted_element>select</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>6</length>
+</problem>
+</problems>

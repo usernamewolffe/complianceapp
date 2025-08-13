@@ -1,0 +1,422 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/compliance_app/migrations/0001_initial.py</file>
+  <line>12</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/compliance_app/migrations/0001_initial.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>App 'orgs' not found</description>
+  <highlighted_element>orgs</highlighted_element>
+  <language>Python</language>
+  <offset>10</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/compliance_app/migrations/0001_initial.py</file>
+  <line>12</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/compliance_app/migrations/0001_initial.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Migration '0001_initial' not found</description>
+  <highlighted_element>0001_initial</highlighted_element>
+  <language>Python</language>
+  <offset>18</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/config/urls.py</file>
+  <line>53</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/config/urls.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'with_ui' for class 'type'</description>
+  <highlighted_element>with_ui</highlighted_element>
+  <language>Python</language>
+  <offset>33</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/config/urls.py</file>
+  <line>54</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/config/urls.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'with_ui' for class 'type'</description>
+  <highlighted_element>with_ui</highlighted_element>
+  <language>Python</language>
+  <offset>31</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/migrations/0001_initial.py</file>
+  <line>13</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/migrations/0001_initial.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>App 'orgs' not found</description>
+  <highlighted_element>orgs</highlighted_element>
+  <language>Python</language>
+  <offset>10</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/migrations/0001_initial.py</file>
+  <line>13</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/migrations/0001_initial.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Migration '0005_orginvite_cancelled_at_delete_invitation' not found</description>
+  <highlighted_element>0005_orginvite_cancelled_at_delete_invitation</highlighted_element>
+  <language>Python</language>
+  <offset>18</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/models.py</file>
+  <line>29</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/models.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Classification'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>76</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/models.py</file>
+  <line>30</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/models.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Severity'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>64</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/models.py</file>
+  <line>32</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/models.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Status'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>60</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>61</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Classification'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>55</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>62</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Severity'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>44</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>78</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Template file 'incident_detail.html' not found</description>
+  <highlighted_element>incident_detail.html</highlighted_element>
+  <language>Python</language>
+  <offset>12</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>85</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Status'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>40</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>114</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Classification'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>57</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>115</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Severity'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>49</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>154</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Classification'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>55</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>155</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Severity'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>44</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/incidents/views.py</file>
+  <line>170</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/incidents/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'choices' for class 'Status'</description>
+  <highlighted_element>choices</highlighted_element>
+  <language>Python</language>
+  <offset>43</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/admin.py</file>
+  <line>29</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/admin.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Cannot resolve admin field 'user__username'</description>
+  <highlighted_element>user__username</highlighted_element>
+  <language>Python</language>
+  <offset>30</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/admin.py</file>
+  <line>37</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/admin.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Cannot resolve admin field 'user__email'</description>
+  <highlighted_element>user__email</highlighted_element>
+  <language>Python</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/admin.py</file>
+  <line>37</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/admin.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Cannot resolve admin field 'user__username'</description>
+  <highlighted_element>user__username</highlighted_element>
+  <language>Python</language>
+  <offset>37</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/migrations/0002_org_user_alter_org_description_alter_org_name.py</file>
+  <line>11</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/migrations/0002_org_user_alter_org_description_alter_org_name.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>App 'orgs' not found</description>
+  <highlighted_element>orgs</highlighted_element>
+  <language>Python</language>
+  <offset>10</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/migrations/0002_org_user_alter_org_description_alter_org_name.py</file>
+  <line>11</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/migrations/0002_org_user_alter_org_description_alter_org_name.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Migration '0001_initial' not found</description>
+  <highlighted_element>0001_initial</highlighted_element>
+  <language>Python</language>
+  <offset>18</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/migrations/0003_orginvite_membership.py</file>
+  <line>11</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/migrations/0003_orginvite_membership.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>App 'orgs' not found</description>
+  <highlighted_element>orgs</highlighted_element>
+  <language>Python</language>
+  <offset>10</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/migrations/0003_orginvite_membership.py</file>
+  <line>11</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/migrations/0003_orginvite_membership.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Migration '0002_org_user_alter_org_description_alter_org_name' not found</description>
+  <highlighted_element>0002_org_user_alter_org_description_alter_org_name</highlighted_element>
+  <language>Python</language>
+  <offset>18</offset>
+  <length>50</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/migrations/0004_invitation.py</file>
+  <line>12</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/migrations/0004_invitation.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>App 'orgs' not found</description>
+  <highlighted_element>orgs</highlighted_element>
+  <language>Python</language>
+  <offset>10</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/migrations/0004_invitation.py</file>
+  <line>12</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/migrations/0004_invitation.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Migration '0003_orginvite_membership' not found</description>
+  <highlighted_element>0003_orginvite_membership</highlighted_element>
+  <language>Python</language>
+  <offset>18</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/migrations/0005_orginvite_cancelled_at_delete_invitation.py</file>
+  <line>9</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/migrations/0005_orginvite_cancelled_at_delete_invitation.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>App 'orgs' not found</description>
+  <highlighted_element>orgs</highlighted_element>
+  <language>Python</language>
+  <offset>10</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/migrations/0005_orginvite_cancelled_at_delete_invitation.py</file>
+  <line>9</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/migrations/0005_orginvite_cancelled_at_delete_invitation.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Migration '0004_invitation' not found</description>
+  <highlighted_element>0004_invitation</highlighted_element>
+  <language>Python</language>
+  <offset>18</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/models.py</file>
+  <line>82</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/models.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Cannot find reference 'timedelta' in 'timezone.pyi'</description>
+  <highlighted_element>timedelta</highlighted_element>
+  <language>Python</language>
+  <offset>56</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/tests.py</file>
+  <line>13</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/tests.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'create_user' for class 'Manager'</description>
+  <highlighted_element>create_user</highlighted_element>
+  <language>Python</language>
+  <offset>34</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/tests.py</file>
+  <line>14</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/tests.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'create_user' for class 'Manager'</description>
+  <highlighted_element>create_user</highlighted_element>
+  <language>Python</language>
+  <offset>34</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/tests.py</file>
+  <line>15</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/tests.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Unresolved attribute reference 'create_user' for class 'Manager'</description>
+  <highlighted_element>create_user</highlighted_element>
+  <language>Python</language>
+  <offset>34</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/orgs/views.py</file>
+  <line>319</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/orgs/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Cannot find reference 'timedelta' in 'timezone.pyi'</description>
+  <highlighted_element>timedelta</highlighted_element>
+  <language>Python</language>
+  <offset>47</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/views.py</file>
+  <line>40</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/views.py" />
+  <problem_class id="PyUnresolvedReferencesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</problem_class>
+  <description>Template file 'home .html' not found</description>
+  <highlighted_element>home .html</highlighted_element>
+  <language>Python</language>
+  <offset>31</offset>
+  <length>10</length>
+</problem>
+</problems>

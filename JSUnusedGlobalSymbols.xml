@@ -1,0 +1,494 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectBox.js</file>
+  <line>44</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectBox.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused function get_hidden_node_count</description>
+  <highlighted_element>get_hidden_node_count</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectBox.js</file>
+  <line>108</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectBox.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property select_all</description>
+  <highlighted_element>select_all</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js</file>
+  <line>227</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property any_selected</description>
+  <highlighted_element>any_selected</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js</file>
+  <line>234</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property refresh_filtered_warning</description>
+  <highlighted_element>refresh_filtered_warning</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js</file>
+  <line>248</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property refresh_filtered_selects</description>
+  <highlighted_element>refresh_filtered_selects</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js</file>
+  <line>252</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property refresh_icons</description>
+  <highlighted_element>refresh_icons</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js</file>
+  <line>262</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property filter_key_press</description>
+  <highlighted_element>filter_key_press</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js</file>
+  <line>272</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property filter_key_up</description>
+  <highlighted_element>filter_key_up</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js</file>
+  <line>281</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property filter_key_down</description>
+  <highlighted_element>filter_key_down</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/calendar.js</file>
+  <line>228</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/calendar.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property drawPreviousYear</description>
+  <highlighted_element>drawPreviousYear</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/calendar.js</file>
+  <line>232</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/calendar.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property drawNextYear</description>
+  <highlighted_element>drawNextYear</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1552</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property ATTR</description>
+  <highlighted_element>ATTR</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1566</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property CHILD</description>
+  <highlighted_element>CHILD</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1603</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property PSEUDO</description>
+  <highlighted_element>PSEUDO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1663</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property ATTR</description>
+  <highlighted_element>ATTR</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1703</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property CHILD</description>
+  <highlighted_element>CHILD</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1813</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property PSEUDO</description>
+  <highlighted_element>PSEUDO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3050</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property addBack</description>
+  <highlighted_element>addBack</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3070</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property parentsUntil</description>
+  <highlighted_element>parentsUntil</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3085</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property nextUntil</description>
+  <highlighted_element>nextUntil</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3088</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property prevUntil</description>
+  <highlighted_element>prevUntil</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>4188</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property hasData</description>
+  <highlighted_element>hasData</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>4202</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property _data</description>
+  <highlighted_element>_data</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>4206</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property _removeData</description>
+  <highlighted_element>_removeData</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>4393</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property clearQueue</description>
+  <highlighted_element>clearQueue</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>7557</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property tweener</description>
+  <highlighted_element>tweener</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>7578</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property prefilter</description>
+  <highlighted_element>prefilter</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>7632</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property fadeTo</description>
+  <highlighted_element>fadeTo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>8710</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property triggerHandler</description>
+  <highlighted_element>triggerHandler</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9657</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property getJSON</description>
+  <highlighted_element>getJSON</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>9661</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property getScript</description>
+  <highlighted_element>getScript</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>10551</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property delegate</description>
+  <highlighted_element>delegate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>10554</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property undelegate</description>
+  <highlighted_element>undelegate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>1</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>1566</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused definition isEnabled</description>
+  <highlighted_element>isEnabled</highlighted_element>
+  <language>JavaScript</language>
+  <offset>26</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>1662</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused definition selectionContainer</description>
+  <highlighted_element>selectionContainer</highlighted_element>
+  <language>JavaScript</language>
+  <offset>28</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>2147</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused definition createPlaceholder</description>
+  <highlighted_element>createPlaceholder</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>4612</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused definition showSearch</description>
+  <highlighted_element>showSearch</highlighted_element>
+  <language>JavaScript</language>
+  <offset>36</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>5869</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused definition isEnabled</description>
+  <highlighted_element>isEnabled</highlighted_element>
+  <language>JavaScript</language>
+  <offset>20</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>6563</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused definition onmousewheel</description>
+  <highlighted_element>onmousewheel</highlighted_element>
+  <language>JavaScript</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>6576</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused definition onmousewheel</description>
+  <highlighted_element>onmousewheel</highlighted_element>
+  <language>JavaScript</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>6607</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSUnusedGlobalSymbols" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused global symbol</problem_class>
+  <description>Unused property unmousewheel</description>
+  <highlighted_element>unmousewheel</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>12</length>
+</problem>
+</problems>

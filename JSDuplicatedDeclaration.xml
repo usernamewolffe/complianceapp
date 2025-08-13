@@ -1,0 +1,86 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>42</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>S2</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>44</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>S2</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js</file>
+  <line>47</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>j</highlighted_element>
+  <language>JavaScript</language>
+  <offset>15</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js</file>
+  <line>51</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>j</highlighted_element>
+  <language>JavaScript</language>
+  <offset>15</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js</file>
+  <line>117</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>value</highlighted_element>
+  <language>JavaScript</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js</file>
+  <line>122</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>value</highlighted_element>
+  <language>JavaScript</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js</file>
+  <line>127</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/docs/js/api.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>value</highlighted_element>
+  <language>JavaScript</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+</problems>

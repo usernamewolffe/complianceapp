@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3934</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSObjectNullOrUndefined" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Object is 'null' or 'undefined'</problem_class>
+  <description>fn is possibly null</description>
+  <highlighted_element>fn</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>9</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>3937</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="JSObjectNullOrUndefined" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Object is 'null' or 'undefined'</problem_class>
+  <description>fn is possibly null</description>
+  <highlighted_element>fn</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>14</offset>
+  <length>2</length>
+</problem>
+</problems>

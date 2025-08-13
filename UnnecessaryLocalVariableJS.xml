@@ -1,0 +1,482 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/actions.js</file>
+  <line>141</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/actions.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;filtered&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>filtered</highlighted_element>
+  <language>JavaScript</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>1325</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;$highlighted&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>$highlighted</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>1381</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;KEYS&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>KEYS</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>1761</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;$container&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>2284</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;translations&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>translations</highlighted_element>
+  <language>JavaScript</language>
+  <offset>10</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>2298</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;diacritics&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>diacritics</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>4730</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;message&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>message</highlighted_element>
+  <language>JavaScript</language>
+  <offset>10</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>4906</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;SearchableDropdown&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>SearchableDropdown</highlighted_element>
+  <language>JavaScript</language>
+  <offset>12</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>5109</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;languages&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>languages</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js</file>
+  <line>5211</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;defaults&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>defaults</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>43</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;color:#56a8f5;&quot;&gt;_default&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>_default</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>357</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;color:#56a8f5;&quot;&gt;_default&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>_default</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>397</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;_default&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>_default</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2434</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;_default&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>_default</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2577</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2582</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2587</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2592</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2597</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2647</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;getIteratorMethod&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>getIteratorMethod</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2766</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2771</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2776</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2781</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>4627</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;store&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>store</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>4865</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;wellKnownSymbol&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>wellKnownSymbol</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5819</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5824</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5829</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5840</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5845</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5870</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5875</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5880</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5885</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5890</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>5895</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;parent&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>parent</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>4953</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;Immutable&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>Immutable</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>287</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;value&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>value</highlighted_element>
+  <language>JavaScript</language>
+  <offset>10</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>587</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="UnnecessaryLocalVariableJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant local variable</problem_class>
+  <description>&lt;html&gt;Local variable &lt;code&gt;&lt;span style=&quot;&quot;&gt;coreapi&lt;/span&gt;&lt;/code&gt; is redundant&lt;/html&gt;</description>
+  <highlighted_element>coreapi</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>7</length>
+</problem>
+</problems>

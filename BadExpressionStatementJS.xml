@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>1966</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="BadExpressionStatementJS" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Expression statement which is not assignment or call</problem_class>
+  <description>Expression statement is not assignment or call #loc</description>
+  <highlighted_element>elem.parentNode.selectedIndex</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>4</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js</file>
+  <line>8106</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" />
+  <problem_class id="BadExpressionStatementJS" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Expression statement which is not assignment or call</problem_class>
+  <description>Expression statement is not assignment or call #loc</description>
+  <highlighted_element>parent.selectedIndex</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>4</offset>
+  <length>20</length>
+</problem>
+</problems>

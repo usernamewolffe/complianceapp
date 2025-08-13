@@ -1,0 +1,10 @@
+<ul>
+  {% for u in updates %}
+    <li>
+      <strong>{{ u.created_by }}</strong> · {{ u.created_at|date:"Y-m-d H:i" }}<br>
+      {{ u.note|linebreaksbr }}
+    </li>
+  {% empty %}
+    <li class="muted">No updates yet.</li>
+  {% endfor %}
+</ul>

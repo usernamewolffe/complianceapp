@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>3832</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="JSVoidFunctionReturnValueUsed" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Void function return value used</problem_class>
+  <description>Void function return value is used</description>
+  <highlighted_element>this._map.clear()</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>29</offset>
+  <length>17</length>
+</problem>
+</problems>

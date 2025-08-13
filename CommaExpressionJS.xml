@@ -1,0 +1,698 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>596</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>82</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>121</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>131</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>20</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>159</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>170</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>25</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>198</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>35</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>395</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>396</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>492</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>21</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>584</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>39</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>665</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>10</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>668</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>51</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>668</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>97</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>676</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>96</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>689</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>11</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>734</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>26</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>761</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>11</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>778</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>781</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>22</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>893</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>940</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>105</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1037</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>43</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1058</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>25</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1068</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>29</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1068</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>115</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1078</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>31</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1105</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>49</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1613</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>10</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1944</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>50</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1953</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>1970</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>25</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2083</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>27</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2137</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>35</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2167</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2174</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2249</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>4</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2252</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>20</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2255</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>45</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2268</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>18</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2272</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>35</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2318</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>22</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2364</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>34</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2373</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>11</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2408</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2424</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2482</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>68</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2490</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>66</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2498</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>73</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2534</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>72</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2540</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>67</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2554</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>65</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js</file>
+  <line>2575</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>78</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>1872</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>57</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>2833</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>49</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>3132</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>75</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js</file>
+  <line>3543</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/immutable.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>32</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/js/coreapi-0.1.1.js" />
+  <problem_class id="CommaExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Comma expression</problem_class>
+  <description>Comma expression #loc</description>
+  <highlighted_element>,</highlighted_element>
+  <language>JavaScript</language>
+  <offset>585</offset>
+  <length>1</length>
+</problem>
+</problems>

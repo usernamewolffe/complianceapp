@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/fonts/fontawesome-webfont.svg</file>
+  <line>4</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/fonts/fontawesome-webfont.svg" />
+  <problem_class id="CheckTagEmptyBody" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty element content</problem_class>
+  <description>XML tag has empty body</description>
+  <highlighted_element>&lt;metadata&gt;&lt;/metadata&gt;</highlighted_element>
+  <language>SVG</language>
+  <offset>0</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg</file>
+  <line>4</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg" />
+  <problem_class id="CheckTagEmptyBody" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Empty element content</problem_class>
+  <description>XML tag has empty body</description>
+  <highlighted_element>&lt;metadata&gt;&lt;/metadata&gt;</highlighted_element>
+  <language>SVG</language>
+  <offset>0</offset>
+  <length>21</length>
+</problem>
+</problems>

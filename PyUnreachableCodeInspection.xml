@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/forms.py</file>
+  <line>50</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/forms.py" />
+  <problem_class id="PyUnreachableCodeInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unreachable code</problem_class>
+  <description>This code is unreachable</description>
+  <highlighted_element># Limit org choices to those owned by this user self.fields[&quot;org&quot;].queryset = Org.object...</highlighted_element>
+  <language>Python</language>
+  <offset>12</offset>
+  <length>124</length>
+</problem>
+</problems>

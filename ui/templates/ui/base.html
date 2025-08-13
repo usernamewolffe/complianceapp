@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}NIS2{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% load static %}
+  <link rel="icon" href="{% static 'favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'drf-yasg/swagger-ui-dist/swagger-ui.css' %}">
+  <style>
+    .badge{display:inline-block;padding:.15rem .4rem;border-radius:.4rem;font-size:.8rem;font-weight:600}
+    .b-pending{background:#fff3cd;border:1px solid #ffe69c;color:#664d03}
+    .b-inprogress{background:#cff4fc;border:1px solid #9eeaf9;color:#055160}
+    .b-done{background:#d1e7dd;border:1px solid #a3cfbb;color:#0f5132}
+    .muted{color:#6c757d}
+    .btn{padding:.45rem .8rem;border:1px solid #ced4da;background:#f8f9fa;border-radius:.5rem;cursor:pointer}
+    .btn[disabled]{opacity:.6;cursor:not-allowed}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:.5rem;border-bottom:1px solid #e9ecef;vertical-align:top}
+    .right{float:right}
+    /* subtle horizontal divider */
+.divider{
+  height:1px;
+  border:0;
+  background: linear-gradient(90deg, transparent, #e9ecef, transparent);
+  margin: 1.25rem 0;
+}
+.section { padding-top: .25rem; }
+.section h2 { margin: 0 0 .5rem 0; }
+
+  </style>
+</head>
+<body>
+  <main style="max-width:980px;margin:2rem auto;padding:0 1rem">
+    {% block content %}{% endblock %}
+  </main>
+
+  <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+  <script>
+    function getCookie(name){
+      const m = document.cookie.match('(^|;)\\s*'+name+'\\s*=\\s*([^;]+)');
+      return m ? m.pop() : '';
+    }
+    document.body.addEventListener('htmx:configRequest', (e) => {
+      e.detail.headers['X-CSRFToken'] = getCookie('csrftoken');
+    });
+  </script>
+  <script src="{% static 'core/js/htmx-hooks.js' %}"></script>
+</body>
+</html>

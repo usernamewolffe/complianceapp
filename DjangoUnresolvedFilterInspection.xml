@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/ui/templates/ui/partials/_incident_attachments.html</file>
+  <line>4</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/ui/templates/ui/partials/_incident_attachments.html" />
+  <problem_class id="DjangoUnresolvedFilterInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved filter</problem_class>
+  <description>Unresolved filter 'basename'</description>
+  <highlighted_element>basename</highlighted_element>
+  <language>DjangoTemplate</language>
+  <offset>48</offset>
+  <length>8</length>
+</problem>
+</problems>

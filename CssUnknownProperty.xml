@@ -1,0 +1,554 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css</file>
+  <line>121</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-clip-path&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-clip-path</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration-skip&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration-skip</highlighted_element>
+  <language>CSS</language>
+  <offset>659</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>794</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-appearance&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-appearance</highlighted_element>
+  <language>CSS</language>
+  <offset>45063</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>48889</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>98816</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>98905</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>98991</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99099</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99191</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99280</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99408</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99499</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99587</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99695</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99786</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>99874</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>108067</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>114686</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-appearance&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-appearance</highlighted_element>
+  <language>CSS</language>
+  <offset>127755</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-appearance&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-appearance</highlighted_element>
+  <language>CSS</language>
+  <offset>132563</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>133029</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>140212</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>143531</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css</file>
+  <line>1</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-text-decoration&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-text-decoration</highlighted_element>
+  <language>CSS</language>
+  <offset>144210</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>88</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>91</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>96</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>99</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>104</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-o-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-o-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>107</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-o-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-o-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>4</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>128</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>129</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>131</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-o-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-o-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>136</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>137</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>139</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-o-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-o-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>144</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>145</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>147</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-o-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-o-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>152</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>153</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>155</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-o-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-o-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>160</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-webkit-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-webkit-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>161</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-moz-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-moz-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css</file>
+  <line>163</line>
+  <module>nis2-compliance</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/staticfiles/rest_framework/css/font-awesome-4.0.3.css" />
+  <problem_class id="CssUnknownProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unknown property</problem_class>
+  <description>Unknown CSS property &lt;code&gt;-o-transform&lt;/code&gt; #loc</description>
+  <highlighted_element>-o-transform</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>12</length>
+</problem>
+</problems>

@@ -1,0 +1,31 @@
+{% comment %}inline create form shown above the table{% endcomment %}
+<form method="post"
+      action="{% url 'record-create' org.id %}"
+      hx-post="{% url 'record-create' org.id %}"
+      hx-target="#records-tbody"
+      hx-swap="afterbegin"
+      style="display:flex;gap:.5rem;align-items:flex-start;flex-wrap:wrap;margin:.75rem 0">
+  {% csrf_token %}
+
+  <textarea name="requirement" rows="3" placeholder="Describe the requirement…"
+            style="flex:1;min-width:360px;padding:.5rem;border:1px solid #ced4da;border-radius:.5rem"></textarea>
+
+  <select name="status" style="padding:.5rem;border:1px solid #ced4da;border-radius:.5rem">
+    <option value="pending" {% if status_val == "pending" %}selected{% endif %}>Pending</option>
+    <option value="in_progress" {% if status_val == "in_progress" %}selected{% endif %}>In progress</option>
+    <option value="done" {% if status_val == "done" %}selected{% endif %}>Done</option>
+  </select>
+
+  <button type="submit" class="btn">Create</button>
+  <button type="button" class="btn"
+          hx-swap-oob="true"
+          onclick="document.getElementById('create-record').innerHTML=''">
+    Cancel
+  </button>
+</form>
+
+{% if error %}
+  <div class="muted" style="color:#842029;background:#f8d7da;border:1px solid #f5c2c7;padding:.5rem;border-radius:.5rem;margin-top:.5rem">
+    {{ error }}
+  </div>
+{% endif %}
