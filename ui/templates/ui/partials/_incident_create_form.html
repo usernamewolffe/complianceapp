@@ -1,0 +1,26 @@
+<div id="{{ container_id }}">
+  <form
+    hx-post="{% url 'incidents:create' org_id=org_id site_id=site_id %}"
+    hx-target="#{{ container_id }}"
+    hx-swap="outerHTML"
+    style="display:flex; gap:.5rem; align-items:flex-end; flex-wrap:wrap;">
+    {% csrf_token %}
+    <div>
+      <label>Title<br>
+        <input type="text" name="title" required>
+      </label>
+    </div>
+    <div>
+      <label>Severity<br>
+        <select name="severity">
+          <option value="low">Low</option>
+          <option value="moderate" selected>Moderate</option>
+          <option value="high">High</option>
+          <option value="critical">Critical</option>
+        </select>
+      </label>
+    </div>
+    <input type="hidden" name="container_id" value="{{ container_id }}">
+    <button type="submit">Create incident</button>
+  </form>
+</div>

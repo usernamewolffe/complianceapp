@@ -1,0 +1,35 @@
+{# ui/templates/ui/partials/_obligation_cell.html #}
+{# Context: ob (Obligation), org_id, site_id, incident_id #}
+
+<div id="obligation-{{ ob.id }}" class="obligation-pill" style="display:flex;align-items:center;gap:.5rem;border:1px solid #ddd;padding:.35rem .5rem;border-radius:.4rem;">
+  <strong>{{ ob.get_authority_display }}</strong>
+
+  {% if not ob.filed_at %}
+    <span class="{{ ob.timer_css }}">{{ ob.timer_text }}</span>
+    <form
+      hx-post="{% url 'incidents:obligation-file' org_id=org_id site_id=site_id incident_id=incident_id obligation_id=ob.id %}"
+      hx-target="#obligation-{{ ob.id }}"
+      hx-swap="outerHTML"
+      style="display:inline-flex; gap:.4rem; align-items:center; margin:0;">
+      {% csrf_token %}
+      <input type="text" name="submission_ref" placeholder="Ref (optional)" style="max-width:12rem;">
+      <button type="submit">Mark filed</button>
+    </form>
+  {% else %}
+    <span class="{{ ob.timer_css }}">
+      {{ ob.timer_text }}
+    </span>
+    {% if ob.submission_ref %}
+      <span class="text-gray-500">Ref: {{ ob.submission_ref }}</span>
+    {% endif %}
+    <form
+      hx-post="{% url 'incidents:obligation-file' org_id=org_id site_id=site_id incident_id=incident_id obligation_id=ob.id %}"
+      hx-target="#obligation-{{ ob.id }}"
+      hx-swap="outerHTML"
+      style="display:inline-flex; gap:.4rem; align-items:center; margin:0;">
+      {% csrf_token %}
+      <input type="text" name="submission_ref" placeholder="Update ref" value="{{ ob.submission_ref }}" style="max-width:12rem;">
+      <button type="submit">Update</button>
+    </form>
+  {% endif %}
+</div>

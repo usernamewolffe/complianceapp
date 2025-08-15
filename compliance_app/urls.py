@@ -2,14 +2,12 @@
 from django.urls import path
 from . import views
 
-app_name = "compliance_ui"
+app_name = "compliance_ui"  # must match the namespace used in config/urls.py
 
 urlpatterns = [
-    # HTMX block loader (requires org_id from the parent include)
-    path("", views.records_block, name="org-records-block"),
-
-    # Inline actions for the table/form
-    path("create/", views.record_create, name="record-create"),
-    path("<int:pk>/edit/", views.record_edit, name="record-edit"),
-    path("<int:pk>/delete/", views.record_delete, name="record-delete"),
+    path("", views.records_block, name="org-records-block"),                 # GET (HTMX load)
+    path("create/", views.record_create, name="record-create"),              # POST
+    path("<int:pk>/", views.record_row, name="record-row"),                  # GET (row refresh)
+    path("<int:pk>/edit/", views.record_edit, name="record-edit"),           # GET/POST
+    path("<int:pk>/delete/", views.record_delete, name="record-delete"),     # POST
 ]

@@ -1,21 +1,22 @@
 # orgs/views.py
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
+
+from django.http import HttpResponseForbidden
 from django.utils import timezone
-from django.shortcuts import get_object_or_404, render
-from django.http import JsonResponse, HttpResponseForbidden
-from django.views.decorators.http import require_http_methods, require_POST
+from django.views.decorators.http import require_GET, require_POST, require_http_methods
+from django.shortcuts import get_object_or_404, render, redirect
+
 
 from rest_framework import viewsets, decorators, response, status, permissions as drf_permissions
-from rest_framework.decorators import api_view, permission_classes
 
-# Models/permissions (avoid name clashes by aliasing)
-from .models import Org, Membership as MembershipModel, OrgInvite
+# Models / forms / permissions / serializers
+from .models import Org, Membership as MembershipModel, OrgInvite, Site
+from .forms import SiteForm
 from .permissions import Membership as MembershipPermission, RequireRole
 from .serializers import OrgInviteSerializer, MembershipSerializer
 
-# If you already have an OrgSerializer in orgs/serializers.py, import it.
-# If not, this minimal inline fallback keeps things working.
+# Optional Org serializer fallback (if not already defined)
 try:
     from .serializers import OrgSerializer  # type: ignore[attr-defined]
 except ImportError:  # pragma: no cover
@@ -25,16 +26,27 @@ except ImportError:  # pragma: no cover
             model = Org
             fields = "__all__"
 
+# Guard helpers
+from orgs.logic.guards import (
+    GuardError,
+    ensure_owner,
+    guard_role_change,
+    guard_toggle_active,
+)
+
 User = get_user_model()
 
+# --- helper: admin/owner can manage sites ---
+def _can_manage_sites(request, org) -> bool:
+    m = MembershipModel.objects.filter(org=org, user=request.user, is_active=True).first()
+    return bool(m and m.role in (MembershipModel.OWNER, MembershipModel.ADMIN))
 
-# --------------------------------------------------------------------------------------
-# API: current user + memberships
-# --------------------------------------------------------------------------------------
-@api_view(["GET"])
-@permission_classes([drf_permissions.IsAuthenticated])
+# ======================================================================================
+# API: /api/me  (current user + active memberships)
+# ======================================================================================
+@decorators.api_view(["GET"])
+@decorators.permission_classes([drf_permissions.IsAuthenticated])
 def me_view(request):
-    """Return current user info + memberships."""
     user = request.user
     memberships = (
         MembershipModel.objects.filter(user=user, is_active=True)
@@ -54,14 +66,14 @@ def me_view(request):
     )
 
 
-# --------------------------------------------------------------------------------------
-# API: Org CRUD
-# --------------------------------------------------------------------------------------
+# ======================================================================================
+# API: Org CRUD + members + invite (DRF)
+# ======================================================================================
 class OrgViewSet(viewsets.ModelViewSet):
     """
     Org CRUD with membership-aware permissions.
-    - list/retrieve: must be authenticated; results limited to orgs you belong to
-    - create: any authenticated user; creator becomes OWNER
+    - list/retrieve: authenticated; limited to orgs you belong to
+    - create: authenticated; creator becomes OWNER
     - update/partial_update/destroy/invite: require ADMIN+ on that org
     - members: list active members for the org
     """
@@ -73,28 +85,24 @@ class OrgViewSet(viewsets.ModelViewSet):
         user = self.request.user
         if not user.is_authenticated:
             return Org.objects.none()
-        return (
-            Org.objects.filter(memberships__user=user, memberships__is_active=True)
-            .distinct()
-        )
+        return Org.objects.filter(
+            memberships__user=user, memberships__is_active=True
+        ).distinct()
 
     def get_permissions(self):
-        if self.action in {"list", "retrieve", "members"}:
-            return [drf_permissions.IsAuthenticated()]
-        if self.action in {"create"}:
+        if self.action in {"list", "retrieve", "members", "create"}:
             return [drf_permissions.IsAuthenticated()]
         # write operations on an existing org need admin+
         return [drf_permissions.IsAuthenticated(), RequireRole("admin")]
 
     def perform_create(self, serializer):
-        """On create, save org and grant creator OWNER membership."""
         org = serializer.save()
         if self.request.user.is_authenticated:
             MembershipModel.objects.get_or_create(
                 org=org,
                 user=self.request.user,
                 defaults={
-                    "role": MembershipModel.OWNER,   # "owner"
+                    "role": MembershipModel.OWNER,
                     "is_active": True,
                     "accepted_at": timezone.now(),
                 },
@@ -121,8 +129,8 @@ class OrgViewSet(viewsets.ModelViewSet):
     )
     def invite(self, request, *args, **kwargs):
         org = self.get_object()
-        email = request.data.get("email")
-        role = request.data.get("role", MembershipModel.MEMBER)
+        email = (request.data.get("email") or "").strip()
+        role = (request.data.get("role") or MembershipModel.MEMBER).lower()
 
         if not email:
             return response.Response({"detail": "email required"}, status=400)
@@ -132,13 +140,13 @@ class OrgViewSet(viewsets.ModelViewSet):
         inv = OrgInvite.objects.create(
             email=email, org=org, role=role, invited_by=request.user
         )
-        # TODO: send email containing a link with inv.token
+        # TODO: send email with inv.token
         return response.Response(OrgInviteSerializer(inv).data, status=201)
 
 
-# --------------------------------------------------------------------------------------
+# ======================================================================================
 # API: Accept invite
-# --------------------------------------------------------------------------------------
+# ======================================================================================
 class AcceptInviteViewSet(viewsets.ViewSet):
     """
     POST /api/invites/accept/ { "token": "<token>" }
@@ -185,9 +193,9 @@ class AcceptInviteViewSet(viewsets.ViewSet):
         )
 
 
-# --------------------------------------------------------------------------------------
-# UI helpers / block renderer
-# --------------------------------------------------------------------------------------
+# ======================================================================================
+# UI helpers / block renderer (members)
+# ======================================================================================
 def render_members_block(request, org, *, ok=None, error=None):
     acting = MembershipModel.objects.filter(org=org, user=request.user).first()
     members = (
@@ -212,153 +220,103 @@ def render_members_block(request, org, *, ok=None, error=None):
 def org_members_block(request, org_id):
     """HTMX endpoint that renders the members block."""
     org = get_object_or_404(Org, id=org_id)
-    # Only allow users who belong to this org
     if not MembershipModel.objects.filter(org=org, user=request.user, is_active=True).exists():
         return HttpResponseForbidden("You don't have access to this organisation.")
     return render_members_block(request, org)
 
 
-# --------------------------------------------------------------------------------------
-# UI: Role change / activation with server-side safeguards
-# --------------------------------------------------------------------------------------
-from orgs.logic.guards import GuardError, guard_role_change, guard_toggle_active, ensure_owner  # noqa: E402
+@login_required
+def org_members_page(request, org_id):
+    """Full page that shows the members block (bookmarkable)."""
+    org = get_object_or_404(Org, id=org_id)
+    if not MembershipModel.objects.filter(org=org, user=request.user, is_active=True).exists():
+        return HttpResponseForbidden("You don't have access to this organisation.")
+    return render_members_block(request, org)
 
 
+# ======================================================================================
+# UI: Role change / activation with explicit precedence
+# ======================================================================================
 def _actor_member(request, org_id):
     return get_object_or_404(MembershipModel, org_id=org_id, user_id=request.user.id)
-
 
 def _target_member(org_id, member_id):
     return get_object_or_404(MembershipModel, org_id=org_id, id=member_id)
 
-
-@require_http_methods(["PATCH", "POST"])  # HTMX may POST as fallback
-def org_member_update(request, org_id, member_id):
-    actor = _actor_member(request, org_id)
-    target = _target_member(org_id, member_id)
-    org = target.org
-
-    new_role = (request.POST.get("role") or request.GET.get("role") or "").lower()
-    if new_role not in dict(MembershipModel.ROLES):
-        return render_members_block(request, org, error="Invalid role.")
-
-    try:
-        guard_role_change(MembershipModel.objects, actor, target, new_role)
-    except GuardError as e:
-        return render_members_block(request, org, error=str(e))
-
-    target.role = new_role
-    target.save(update_fields=["role"])
-    return render_members_block(request, org, ok=True)
-
-
-@require_http_methods(["POST"])
-def org_member_toggle(request, org_id, member_id):
-    actor = _actor_member(request, org_id)
-    target = _target_member(org_id, member_id)
-    org = target.org
-
-    # Accept either "active" (template) or "is_active"
-    raw = request.POST.get("active", request.POST.get("is_active", ""))
-    new_active = str(raw).lower() in ("1", "true", "yes", "on")
-
-    try:
-        guard_toggle_active(MembershipModel.objects, actor, target, new_active)
-    except GuardError as e:
-        return render_members_block(request, org, error=str(e))
-
-    target.is_active = new_active
-    target.save(update_fields=["is_active"])
-    return render_members_block(request, org, ok=True)
-
-
-# --------------------------------------------------------------------------------------
-# UI: Invitation actions (Cancel / Resend) and Create
-# --------------------------------------------------------------------------------------
-@require_POST
-def invitation_cancel(request, org_id, inv_id):
-    actor = _actor_member(request, org_id)
-    try:
-        ensure_owner(actor)
-    except GuardError as e:
-        org = get_object_or_404(Org, id=org_id)
-        return render_members_block(request, org, error=str(e))
-
-    inv = get_object_or_404(OrgInvite, org_id=org_id, id=inv_id)
-
-    # Only pending (not used/cancelled/expired)
-    is_pending = not inv.used_at and not inv.cancelled_at and (inv.expires_at >= timezone.now())
-    if not is_pending:
-        org = get_object_or_404(Org, id=org_id)
-        return render_members_block(request, org, error="Only pending invitations can be cancelled.")
-
-    inv.cancelled_at = timezone.now()
-    inv.save(update_fields=["cancelled_at"])
-    org = get_object_or_404(Org, id=org_id)
-    return render_members_block(request, org, ok=True)
-
-
-@require_POST
-def invitation_resend(request, org_id, inv_id):
-    actor = _actor_member(request, org_id)
-    try:
-        ensure_owner(actor)
-    except GuardError as e:
-        org = get_object_or_404(Org, id=org_id)
-        return render_members_block(request, org, error=str(e))
-
-    inv = get_object_or_404(OrgInvite, org_id=org_id, id=inv_id)
-
-    # Only pending can be resent
-    is_pending = not inv.used_at and not inv.cancelled_at and (inv.expires_at >= timezone.now())
-    if not is_pending:
-        org = get_object_or_404(Org, id=org_id)
-        return render_members_block(request, org, error="Only pending invitations can be resent.")
-
-    # TODO: send the email with inv.token using your mailer
-    inv.expires_at = timezone.now() + timezone.timedelta(days=7)  # extend validity on resend
-    inv.save(update_fields=["expires_at"])
-    org = get_object_or_404(Org, id=org_id)
-    return render_members_block(request, org, ok=True)
-
+def _is_last_active_owner(member: MembershipModel) -> bool:
+    return (
+        member.role == MembershipModel.OWNER
+        and member.is_active
+        and MembershipModel.objects.filter(
+            org=member.org, role=MembershipModel.OWNER, is_active=True
+        ).count() == 1
+    )
 
 @login_required
-def org_members_page(request, org_id):
-    """Full page that shows the members block (handy bookmarkable page)."""
-    org = get_object_or_404(Org, id=org_id)
+@require_POST
+def org_member_update(request, org_id, member_id):
+    org = get_object_or_404(Org, pk=org_id)
+    actor = _actor_member(request, org_id)
+    member = _target_member(org_id, member_id)
+    new_role = (request.POST.get("role") or "").lower()
 
-    # Only allow users who belong to this org
-    if not MembershipModel.objects.filter(org=org, user=request.user, is_active=True).exists():
-        return HttpResponseForbidden("You don't have access to this organisation.")
+    order = {MembershipModel.MEMBER: 1, MembershipModel.ADMIN: 2, MembershipModel.OWNER: 3}
+    lowering = order.get(new_role, 0) < order.get(member.role, 0)
+    self_action = actor.user_id == member.user_id
 
-    # Build the same context your block expects
-    acting = MembershipModel.objects.filter(org=org, user=request.user).first()
-    members = (
-        MembershipModel.objects.filter(org=org)
-        .select_related("user")
-        .order_by("user__username")
-    )
-    invitations = OrgInvite.objects.filter(org=org).order_by("-expires_at")
+    if lowering and member.role == MembershipModel.OWNER and _is_last_active_owner(member):
+        return render_members_block(request, org, error="You can’t remove/demote the last Owner in this organisation.")
 
-    ctx = {
-        "org": org,
-        "members": members,
-        "invitations": invitations,
-        "roles": MembershipModel.ROLES,
-        "acting_role": acting.role if acting else None,
-        "ok": None,
-        "error": None,
-    }
-    return render(request, "ui/members_page.html", ctx)
+    if self_action and lowering:
+        return render_members_block(request, org, error="You can’t lower your own role.")
+
+    try:
+        guard_role_change(MembershipModel.objects, actor, member, new_role)
+    except GuardError as e:
+        return render_members_block(request, org, error=str(e))
+
+    if new_role != member.role:
+        member.role = new_role
+        member.save(update_fields=["role"])
+    return render_members_block(request, org, ok=True)
+
+@login_required
+@require_POST
+def org_member_toggle(request, org_id, member_id):
+    org = get_object_or_404(Org, pk=org_id)
+    actor = _actor_member(request, org_id)
+    member = _target_member(org_id, member_id)
+    new_active = (request.POST.get("active") or "").lower() == "true"
+
+    self_action = actor.user_id == member.user_id
+
+    if not new_active and _is_last_active_owner(member):
+        return render_members_block(request, org, error="You can’t deactivate the last Owner in this organisation.")
+
+    if self_action and not new_active:
+        return render_members_block(request, org, error="You can’t deactivate your own account in this organisation.")
+
+    try:
+        guard_toggle_active(MembershipModel.objects, actor, member, new_active)
+    except GuardError as e:
+        return render_members_block(request, org, error=str(e))
+
+    if member.is_active != new_active:
+        member.is_active = new_active
+        member.save(update_fields=["is_active"])
+    return render_members_block(request, org, ok=True)
 
 
+# ======================================================================================
+# UI: Invitation actions (views used in orgs/urls.py)
+# ======================================================================================
+@login_required
 @require_POST
 def org_invite_create(request, org_id):
-    """Create an OrgInvite and re-render the members block."""
     org = get_object_or_404(Org, id=org_id)
     actor = _actor_member(request, org_id)
 
-    # owners and admins may invite
+    # Only owners/admins can invite
     if not actor or actor.role not in (MembershipModel.OWNER, MembershipModel.ADMIN):
         return render_members_block(request, org, error="Only owners or admins can send invitations.")
 
@@ -370,16 +328,171 @@ def org_invite_create(request, org_id):
     if role not in dict(MembershipModel.ROLES):
         return render_members_block(request, org, error="Invalid role.")
 
-    # Optional: avoid duplicate membership / pending invite
+    # Prevent duplicates / repeated invites
     if MembershipModel.objects.filter(org=org, user__email=email).exists():
         return render_members_block(request, org, error="That user is already a member.")
     if OrgInvite.objects.filter(
-        org=org, email=email,
-        cancelled_at__isnull=True, used_at__isnull=True,
-        expires_at__gte=timezone.now()
+        org=org,
+        email=email,
+        cancelled_at__isnull=True,
+        used_at__isnull=True,
+        expires_at__gte=timezone.now(),
     ).exists():
         return render_members_block(request, org, error="There is already a pending invite for that email.")
 
     OrgInvite.objects.create(email=email, org=org, role=role, invited_by=request.user)
-    # TODO: send email with invite.token
     return render_members_block(request, org, ok=True)
+
+@login_required
+@require_POST
+def invitation_cancel(request, org_id, inv_id):
+    actor = _actor_member(request, org_id)
+    org = get_object_or_404(Org, id=org_id)
+
+    try:
+        ensure_owner(actor)
+    except GuardError as e:
+        return render_members_block(request, org, error=str(e))
+
+    inv = get_object_or_404(OrgInvite, org_id=org_id, id=inv_id)
+    is_pending = not inv.used_at and not inv.cancelled_at and (inv.expires_at >= timezone.now())
+    if not is_pending:
+        return render_members_block(request, org, error="Only pending invitations can be cancelled.")
+
+    inv.cancelled_at = timezone.now()
+    inv.save(update_fields=["cancelled_at"])
+    return render_members_block(request, org, ok=True)
+
+@login_required
+@require_POST
+def invitation_resend(request, org_id, inv_id):
+    actor = _actor_member(request, org_id)
+    org = get_object_or_404(Org, id=org_id)
+
+    try:
+        ensure_owner(actor)
+    except GuardError as e:
+        return render_members_block(request, org, error=str(e))
+
+    inv = get_object_or_404(OrgInvite, org_id=org_id, id=inv_id)
+    is_pending = not inv.used_at and not inv.cancelled_at and (inv.expires_at >= timezone.now())
+    if not is_pending:
+        return render_members_block(request, org, error="Only pending invitations can be resent.")
+
+    inv.expires_at = timezone.now() + timezone.timedelta(days=7)
+    inv.save(update_fields=["expires_at"])
+    return render_members_block(request, org, ok=True)
+
+
+# ======================================================================================
+# UI: Sites block + actions
+# ======================================================================================
+def _require_member(request, org: Org) -> bool:
+    """User must be an active member of the org."""
+    return MembershipModel.objects.filter(org=org, user=request.user, is_active=True).exists()
+
+@login_required
+@require_GET
+def org_sites_block(request, org_id):
+    org = get_object_or_404(Org, pk=org_id)
+    if not _require_member(request, org):
+        return HttpResponseForbidden("You don't have access to this organisation.")
+
+    sites = org.sites.order_by("name")
+
+    acting = MembershipModel.objects.filter(
+        org=org, user=request.user, is_active=True
+    ).first()
+    can_manage_sites = bool(
+        acting and acting.role in (MembershipModel.OWNER, MembershipModel.ADMIN)
+    )
+
+    return render(
+        request,
+        "ui/partials/_sites.html",
+        {"org": org, "sites": sites, "can_manage_sites": can_manage_sites},
+    )
+
+@login_required
+@require_http_methods(["GET", "POST"])
+def site_create(request, org_id):
+    org = get_object_or_404(Org, pk=org_id)
+    if not _require_member(request, org):
+        return HttpResponseForbidden("You don't have access to this organisation.")
+
+    if request.method == "GET":
+        form = SiteForm()
+        return render(request, "ui/partials/_site_create_form.html", {"org": org, "form": form})
+
+    form = SiteForm(request.POST)
+    if form.is_valid():
+        site = form.save(commit=False)
+        site.org = org
+        site.save()
+        sites = Site.objects.filter(org=org).order_by("name")
+        return render(
+            request,
+            "ui/partials/_sites.html",
+            {"org": org, "sites": sites, "can_manage_sites": _can_manage_sites(request, org)},
+            status=201,
+        )
+
+    return render(request, "ui/partials/_site_create_form.html", {"org": org, "form": form}, status=400)
+
+#site deletion
+def _require_member(request, org: Org) -> bool:
+    from orgs.models import Membership
+    return Membership.objects.filter(org=org, user=request.user, is_active=True).exists()
+
+@login_required
+@require_POST
+def site_delete(request, org_id, site_id):
+    org = get_object_or_404(Org, pk=org_id)
+    if not _require_member(request, org):
+        return HttpResponseForbidden("You don't have access to this organisation.")
+
+    site = get_object_or_404(Site, pk=site_id, org=org)
+
+    # Optional safety: block deletion if incidents exist (better than cascading)
+    if hasattr(site, "incidents") and site.incidents.exists():
+        # Return the sites block with an inline error message instead of deleting
+        sites = Site.objects.filter(org=org).order_by("name")
+        return render(
+            request,
+            "ui/partials/_sites.html",
+            {"org": org, "sites": sites, "error": f"Cannot delete '{site.name}' – incidents exist."},
+            status=400,
+        )
+
+    site.delete()
+
+    # Re-render your sites list block so HTMX swaps it in
+    sites = Site.objects.filter(org=org).order_by("name")
+    return render(request, "ui/partials/_sites.html", {"org": org, "sites": sites})
+
+
+@login_required
+@require_http_methods(["GET", "POST"])
+def site_edit(request, org_id, site_id):
+    org = get_object_or_404(Org, pk=org_id)
+    site = get_object_or_404(Site, pk=site_id, org=org)
+
+    # Where to go back to
+    default_next = reverse("orgs:org-detail", args=[org.id])  # or f"/orgs/{org.id}/"
+    next_url = request.GET.get("next") or request.POST.get("next") or default_next
+
+    if request.method == "POST":
+        if "cancel" in request.POST:
+            return redirect(next_url)
+
+        form = SiteForm(request.POST, instance=site)   # use your existing form
+        if form.is_valid():
+            form.save()
+            return redirect(next_url)
+    else:
+        form = SiteForm(instance=site)
+
+    return render(request, "ui/site_edit.html", {
+        "org": org, "site": site, "form": form, "next": next_url
+    })
+

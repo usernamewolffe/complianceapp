@@ -1,15 +1,25 @@
+# incidents/admin.py
 from django.contrib import admin
-from .models import Incident, IncidentUpdate, IncidentAttachment
+from .models import Incident, IncidentNote, IncidentAttachment
+
+
 
 @admin.register(Incident)
 class IncidentAdmin(admin.ModelAdmin):
-    list_display = ("id", "org", "title", "status", "severity", "aware_at", "deadline_at", "is_overdue")
-    list_filter = ("status", "severity", "classification", "org")
-    search_fields = ("title", "description")
+    # keep to fields that actually exist on your Incident model
+    list_display = ("id", "title", "status")
+    search_fields = ("title", "report_reference", "report_notes")
+    list_filter = ("status",)  # add more later if/when fields exist
 
-admin.site.register(IncidentUpdate)
-admin.site.register(IncidentAttachment)
 
-from django.contrib import admin
+@admin.register(IncidentNote)
+class IncidentNoteAdmin(admin.ModelAdmin):
+    list_display = ("id", "incident")
+    search_fields = ("body",)
 
-# Register your models here.
+
+@admin.register(IncidentAttachment)
+class IncidentAttachmentAdmin(admin.ModelAdmin):
+    list_display = ("id", "incident")
+    search_fields = ("label",)
+

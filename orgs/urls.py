@@ -1,20 +1,28 @@
+# orgs/urls.py
 from django.urls import path
-from orgs import views
+from . import views
+
+app_name = "orgs"
 
 urlpatterns = [
-    # UI page
+    # Members UI + block
     path("orgs/<int:org_id>/members/", views.org_members_page, name="org-members-ui"),
-    # members block (HTMX partial)  <<< add this
     path("orgs/<int:org_id>/members/block/", views.org_members_block, name="org-members-block"),
 
-    # Members actions
-    path("orgs/<int:org_id>/members/<int:member_id>", views.org_member_update, name="org_member_update"),
-    path("orgs/<int:org_id>/members/<int:member_id>/toggle", views.org_member_toggle, name="org_member_toggle"),
-    path("orgs/<int:org_id>/members/<int:member_id>", views.org_member_update, name="org-member-update"),
-    path("orgs/<int:org_id>/members/<int:member_id>/toggle", views.org_member_toggle, name="org-member-toggle"),
+    # Member actions (names match _members.html)
+    path("orgs/<int:org_id>/members/<int:member_id>/update/", views.org_member_update, name="org-member-update"),
+    path("orgs/<int:org_id>/members/<int:member_id>/toggle/", views.org_member_toggle, name="org-member-toggle"),
 
-    # Invitations
-    path("orgs/<int:org_id>/invitations/create", views.org_invite_create, name="org-invite-create"),  # <-- add this
-    path("orgs/<int:org_id>/invitations/<int:inv_id>/cancel", views.invitation_cancel, name="invitation_cancel"),
-    path("orgs/<int:org_id>/invitations/<int:inv_id>/resend", views.invitation_resend, name="invitation_resend"),
+    # Invitations (names match _members.html)
+    path("orgs/<int:org_id>/invitations/create/", views.org_invite_create, name="org-invite-create"),
+    path("orgs/<int:org_id>/invitations/<int:inv_id>/cancel/", views.invitation_cancel, name="invitation-cancel"),
+    path("orgs/<int:org_id>/invitations/<int:inv_id>/resend/", views.invitation_resend, name="invitation-resend"),
+
+    # Sites block + actions
+    path("orgs/<int:org_id>/sites/block/", views.org_sites_block, name="org-sites-block"),
+    path("orgs/<int:org_id>/sites/create/", views.site_create, name="site-create"),
+    path("orgs/<int:org_id>/sites/<int:site_id>/delete/", views.site_delete, name="site-delete"),
+    path("orgs/<int:org_id>/sites/<int:site_id>/edit/", views.site_edit, name="site-edit"),
+
+    path("orgs/<int:org_id>/sites/<int:site_id>/delete/", views.site_delete, name="site-delete",)
 ]

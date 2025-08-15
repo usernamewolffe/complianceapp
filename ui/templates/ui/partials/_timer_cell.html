@@ -1,0 +1,27 @@
+{# Obligation-aware timer cell (drop-in replacement) #}
+{# expects: incident, org_id, site_id in context #}
+
+<div id="timer-cell-{{ incident.id }}" class="timer-cell" style="min-width:220px">
+  {% if incident.obligations.exists %}
+    <div class="obligations" style="display:flex; gap:.5rem; flex-wrap:wrap;">
+      {# Render one swappable pill per obligation #}
+      {% for ob in incident.obligations.all %}
+        {% include "ui/partials/_obligation_cell.html"
+           with ob=ob org_id=org_id site_id=site_id incident_id=incident.id %}
+      {% endfor %}
+    </div>
+  {% else %}
+    {# Legacy fallback: your old single 72h timer text #}
+    <span class="{{ incident.timer_css }}">{{ incident.timer_text }}</span>
+    <div style="margin-top:.35rem">
+      <button
+        hx-post="{% url 'incidents:seed-obligations' org_id=org_id site_id=site_id incident_id=incident.id %}"
+        hx-target="#timer-cell-{{ incident.id }}"
+        hx-swap="outerHTML">
+        Generate obligations (Ofgem/ICO)
+      </button>
+    </div>
+  {% endif %}
+</div>
+
+

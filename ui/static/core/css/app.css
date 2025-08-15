@@ -1,0 +1,11 @@
+.hx-busy { cursor: progress; }
+/* basic modal styling */
+.c-modal { border: none; padding: 0; background: transparent; }
+.c-modal::backdrop { background: rgba(0,0,0,.45); }
+.c-modal__card {
+  background: #fff; color: #111; border-radius: 12px; min-width: 320px; max-width: 480px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2); padding: 16px 16px 12px;
+}
+.c-modal__title { margin: 0 0 6px; font-size: 1.1rem; }
+.c-modal__body { margin: 0 0 12px; line-height: 1.35; }
+.c-modal__actions { display: flex; gap: .5rem; justify-content: flex-end; }

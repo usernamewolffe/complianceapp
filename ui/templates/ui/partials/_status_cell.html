@@ -1,0 +1,66 @@
+{# templates/ui/partials/_status_cell.html #}
+{# expects: incident, org_id, dom_prefix #}
+{% with form_id=dom_prefix|add:"-incident-"|add:incident.id|stringformat:"s"|add:"-file-form" modal_id=dom_prefix|add:"-incident-"|add:incident.id|stringformat:"s"|add:"-confirm" %}
+<td id="{{ dom_prefix }}-incident-{{ incident.id }}-status">
+  {% if incident.is_reported %}
+    <span class="badge badge-success">Reported</span>
+    <div class="text-xs text-muted">
+      {{ incident.reported_at|date:"Y-m-d H:i" }}
+      {% if incident.report_reference %} · Ref: {{ incident.report_reference }}{% endif %}
+    </div>
+  {% else %}
+    {# Invisible form that HTMX submits after modal confirm #}
+    <form id="{{ form_id }}"
+          action="{% url 'incidents:incident-file-submit' org_id=org_id incident_id=incident.id %}"
+          method="post"
+          hx-post="{% url 'incidents:incident-file-submit' org_id=org_id incident_id=incident.id %}"
+          hx-target="#{{ dom_prefix }}-incident-{{ incident.id }}-status"
+          hx-swap="outerHTML"
+          hx-disabled-elt="button">
+      {% csrf_token %}
+      <input type="hidden" name="dom_prefix" value="{{ dom_prefix }}">
+      <input type="hidden" name="report_notes" value="">
+    </form>
+
+    {# Trigger button opens the modal (single click) #}
+    <button type="button" class="btn btn-primary"
+            onclick="document.getElementById('{{ modal_id }}').showModal()">
+      Report has been filed
+    </button>
+
+    <a class="btn btn-outline"
+       href="{% url 'incidents:incident-export-annex-e-html' org_id=org_id incident_id=incident.id %}">
+      Annex E (HTML)
+    </a>
+    <a class="btn btn-outline"
+       href="{% url 'incidents:incident-export-annex-e-html' org_id=org_id incident_id=incident.id %}?as=word">
+      Annex E (Word)
+    </a>
+    <a class="btn btn-outline"
+       href="{% url 'incidents:incident-export-annex-e-json' org_id=org_id incident_id=incident.id %}">
+      Annex E (JSON)
+    </a>
+
+
+    {# Modal (HTML <dialog>) #}
+    <dialog id="{{ modal_id }}" class="c-modal" aria-labelledby="{{ modal_id }}-title">
+      <div class="c-modal__card">
+        <h3 id="{{ modal_id }}-title" class="c-modal__title">Confirm filing</h3>
+        <p class="c-modal__body">
+          Mark this incident as <strong>reported</strong>? The 72-hour timer will stop and the status will turn green.
+        </p>
+        <div class="c-modal__actions">
+          <button type="button" class="btn btn-outline"
+                  onclick="this.closest('dialog').close()">Cancel</button>
+
+          {# Single click: closes the dialog and submits the hidden HTMX form #}
+          <button type="submit" form="{{ form_id }}" class="btn btn-primary"
+                  onclick="this.closest('dialog').close()">
+            Confirm
+          </button>
+        </div>
+      </div>
+    </dialog>
+  {% endif %}
+</td>
+{% endwith %}

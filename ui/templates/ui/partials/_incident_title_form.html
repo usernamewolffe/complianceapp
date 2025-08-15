@@ -1,0 +1,25 @@
+{# expects: org_id, inc, dom_prefix #}
+<td id="{{ dom_prefix }}-title-{{ inc.id }}">
+  <form
+    hx-post="{% url 'incidents:title-form' org_id=org_id incident_id=inc.id %}"
+    hx-vals='{"dom_prefix":"{{ dom_prefix }}"}'
+    hx-target="#{{ dom_prefix }}-title-{{ inc.id }}"
+    hx-swap="outerHTML"
+    style="display:flex;gap:.5rem;align-items:center"
+  >
+    {% csrf_token %}
+    <input type="text" name="title" value="{{ inc.title }}" required
+           style="flex:1;min-width:220px;padding:.25rem .5rem">
+    <button class="btn btn-sm" type="submit">Save</button>
+
+    <button class="btn btn-link" type="button"
+            hx-get="{% url 'incidents:title-form' org_id=org_id incident_id=inc.id %}"
+            hx-vals='{"cancel":1,"dom_prefix":"{{ dom_prefix }}"}'
+            hx-target="#{{ dom_prefix }}-title-{{ inc.id }}"
+            hx-swap="outerHTML">Cancel</button>
+  </form>
+
+  {% if error %}
+    <div class="text-danger" style="margin-top:.25rem">{{ error }}</div>
+  {% endif %}
+</td>

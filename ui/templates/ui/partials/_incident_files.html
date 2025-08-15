@@ -1,0 +1,61 @@
+
+{% if error %}
+  <div style="margin:.5rem 0;color:#842029;border:1px solid #f5c2c7;background:#f8d7da;padding:.5rem .75rem;border-radius:.5rem">
+    {{ error }}
+  </div>
+{% endif %}
+
+<tr class="subrow" id="files-row-{{ inc.id }}">
+  <td colspan="3">
+    <div id="files-{{ inc.id }}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">
+        <h4 style="margin:0">Files</h4>
+        <button class="btn btn-link"
+                hx-get="{% url 'incidents:files-block' org_id=org.id incident_id=inc.id %}"
+                hx-target="#files-row-{{ inc.id }}"
+                hx-swap="outerHTML">Refresh</button>
+      </div>
+
+      {% if files %}
+        <ul style="padding-left:1rem;margin:0 0 .75rem 0">
+          {% for f in files %}
+            <li style="margin:.25rem 0;">
+              <a href="{{ f.file.url }}" target="_blank" rel="noopener">
+                {{ f.label|default:f.file.name|cut:"incidents/" }}
+              </a>
+              <span class="muted">· {{ f.uploaded_at|date:"Y-m-d H:i" }}</span>
+              <form style="display:inline;margin-left:.5rem"
+                    hx-post="{% url 'incidents:file-delete' org_id=org.id incident_id=inc.id attachment_id=f.id %}"
+                    hx-target="#files-{{ inc.id }}"
+                    hx-swap="outerHTML"
+                    hx-confirm="Delete this file?">
+                {% csrf_token %}
+                <button class="btn btn-link" type="submit">Delete</button>
+              </form>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <div class="muted" style="margin-bottom:.75rem">No files yet.</div>
+      {% endif %}
+
+      <form
+        hx-post="{% url 'incidents:file-upload' org_id=org.id incident_id=inc.id %}"
+        hx-encoding="multipart/form-data"
+        enctype="multipart/form-data"
+        hx-target="#files-{{ inc.id }}"
+        hx-swap="outerHTML"
+        hx-disabled-elt="button"
+        style="display:flex;gap:.5rem;align-items:flex-start;flex-wrap:wrap"
+      >
+        {% csrf_token %}
+        <input type="file" name="file" required>
+        <input type="text" name="label" placeholder="Label / tag (optional)"
+               style="min-width:220px;padding:.25rem .5rem">
+        <button class="btn" type="submit">Upload</button>
+        <button class="btn btn-link" type="button"
+                onclick="document.getElementById('files-row-{{ inc.id }}')?.remove()">Close</button>
+      </form>
+    </div>
+  </td>
+</tr>

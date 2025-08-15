@@ -1,0 +1,60 @@
+{# expects: org_id, inc, dom_prefix #}
+<td id="{{ dom_prefix }}-title-{{ inc.id }}">
+  <span
+    hx-get="{% url 'incidents:title-form' org_id=org_id incident_id=inc.id %}"
+    hx-trigger="dblclick consume"
+    hx-target="#{{ dom_prefix }}-title-{{ inc.id }}"
+    hx-vals='{"dom_prefix":"{{ dom_prefix }}"}'
+    hx-swap="outerHTML"
+    style="user-select:text;cursor:text;"
+  >
+    {{ inc.title|default:"(untitled incident)" }}
+  </span>
+
+  <button class="btn btn-link"
+          hx-get="{% url 'incidents:title-form' org_id=org_id incident_id=inc.id %}"
+          hx-target="#{{ dom_prefix }}-title-{{ inc.id }}"
+          hx-vals='{"dom_prefix":"{{ dom_prefix }}"}'
+          hx-swap="outerHTML">Edit</button>
+
+  {# NOTES (toggle) #}
+<button type="button" class="btn btn-link"
+        data-url="{% url 'incidents:notes-block' org_id=org_id incident_id=inc.id %}"
+        data-target="#{{ dom_prefix }}-inc-{{ inc.id }}-notes-content"
+        onclick="(function(btn){
+          const notes = document.querySelector(btn.dataset.target);
+          const files = document.querySelector('#{{ dom_prefix }}-inc-{{ inc.id }}-files-content');
+          if (files) files.innerHTML = '';                       // always close Files
+          if (notes && notes.innerHTML.trim()) {                 // if Notes open -> close
+            notes.innerHTML = '';
+            return;                                              // stop (no request)
+          }
+          htmx.ajax('GET', btn.dataset.url, {                    // open Notes
+            target: btn.dataset.target,
+            swap: 'innerHTML'
+          });
+        })(this)">
+  Notes
+</button>
+
+{# FILES (toggle) #}
+<button type="button" class="btn btn-link"
+        data-url="{% url 'incidents:files-block' org_id=org_id incident_id=inc.id %}"
+        data-target="#{{ dom_prefix }}-inc-{{ inc.id }}-files-content"
+        onclick="(function(btn){
+          const files = document.querySelector(btn.dataset.target);
+          const notes = document.querySelector('#{{ dom_prefix }}-inc-{{ inc.id }}-notes-content');
+          if (notes) notes.innerHTML = '';                       // always close Notes
+          if (files && files.innerHTML.trim()) {                 // if Files open -> close
+            files.innerHTML = '';
+            return;                                              // stop (no request)
+          }
+          htmx.ajax('GET', btn.dataset.url, {                    // open Files
+            target: btn.dataset.target,
+            swap: 'innerHTML'
+          });
+        })(this)">
+  Files
+</button>
+
+</td>

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% load static %}
   <link rel="icon" href="{% static 'favicon.ico' %}">
+{% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/app.css' %}">
   <link rel="stylesheet" href="{% static 'drf-yasg/swagger-ui-dist/swagger-ui.css' %}">
   <style>
     .badge{display:inline-block;padding:.15rem .4rem;border-radius:.4rem;font-size:.8rem;font-weight:600}
@@ -30,6 +32,50 @@
 
   </style>
 </head>
+
+<script>
+(function () {
+  const timers = new WeakMap();
+
+  function humanize(ms){const s=Math.max(0,Math.floor(ms/1000));
+    const d=Math.floor(s/86400),h=Math.floor((s%86400)/3600),m=Math.floor((s%3600)/60);
+    if(d>0)return d+"d "+h+"h"; if(h>0)return h+"h "+m+"m"; return m+"m";}
+
+  function paint(td){
+    const span=td.querySelector("span"), iso=td.getAttribute("data-deadline");
+    if(!span||!iso) return;
+    const deadline=new Date(iso), now=new Date();
+    span.textContent = (now<deadline) ? (humanize(deadline-now)+" left")
+                                      : ("overdue by "+humanize(now-deadline));
+  }
+  function stop(td){const id=timers.get(td); if(id){clearInterval(id); timers.delete(td);}}
+  function start(td){
+    if(!td.classList.contains("js-countdown")) return;
+    if(!td.hasAttribute("data-deadline")) return;
+    if(timers.get(td)) return;
+    paint(td);
+    const id=setInterval(function(){
+      if(!document.body.contains(td) || !td.hasAttribute("data-deadline") || td.classList.contains("no-countdown")){
+        stop(td); return;
+      }
+      paint(td);
+    },60000);
+    timers.set(td,id);
+  }
+  function scan(){
+    document.querySelectorAll("td.js-countdown[data-deadline]").forEach(start);
+    for(const [td] of Array.from(timers)){
+      if(!document.body.contains(td) || !td.hasAttribute("data-deadline") || td.classList.contains("no-countdown")){
+        stop(td);
+      }
+    }
+  }
+  (document.readyState==="loading"?document.addEventListener("DOMContentLoaded",scan):scan());
+  document.body.addEventListener("htmx:afterSwap", scan);
+})();
+</script>
+
+
 <body>
   <main style="max-width:980px;margin:2rem auto;padding:0 1rem">
     {% block content %}{% endblock %}

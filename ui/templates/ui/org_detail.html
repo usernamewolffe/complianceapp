@@ -6,7 +6,7 @@
 <section class="section">
   <h2>Members</h2>
   <div id="members-block"
-       hx-get="{% url 'org-members-block' org.id %}"
+       hx-get="{% url 'orgs:org-members-block' org.id %}"
        hx-trigger="load"
        hx-target="#members-block"
        hx-swap="outerHTML"></div>
@@ -15,12 +15,60 @@
 <hr class="divider" aria-hidden="true" />
 
 <section class="section">
-  <h2>Incidents</h2>
-  <div id="incidents-block"
-       hx-get="{% url 'incidents:incidents-block' org.id %}"
+  <h2>Sites</h2>
+  <div id="org-sites-block"
+       hx-get="{% url 'orgs:org-sites-block' org.id %}"
        hx-trigger="load"
-       hx-target="#incidents-block"
+       hx-target="#org-sites-block"
        hx-swap="outerHTML"></div>
+</section>
+
+<hr class="divider" aria-hidden="true" />
+
+{# ---------------- Incidents (site-scoped) ---------------- #}
+<section class="section">
+  <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;">
+    <h2 style="margin:0;">Incidents</h2>
+
+    {% with site_qs=org.sites.all %}
+      {% with first_site=site_qs.0 %}
+        {% if first_site %}
+          <label for="site-picker" class="muted" style="margin-left:.5rem;">Site:</label>
+
+          <select id="site-picker" style="min-width:12rem;">
+            {% for s in site_qs %}
+              <option value="{{ s.id }}"
+                      data-url="{% url 'incidents:site-incidents-block' org.id s.id %}"
+                      {% if forloop.first %}selected{% endif %}>
+                {{ s.name }}
+              </option>
+            {% endfor %}
+          </select>
+
+          <button id="site-load" class="btn" type="button">Load</button>
+        {% else %}
+          <span class="muted" style="margin-left:.5rem;">No sites yet.</span>
+        {% endif %}
+      {% endwith %}
+    {% endwith %}
+  </div>
+
+  {% with site_qs=org.sites.all %}
+    {% with first_site=site_qs.0 %}
+      <div id="incidents-block"
+           {% if first_site %}
+             hx-get="{% url 'incidents:site-incidents-block' org.id first_site.id %}"
+             hx-trigger="load"
+             hx-target="#incidents-block"
+             hx-swap="outerHTML"
+             hx-vals='{"container_id":"incidents-block"}'
+           {% endif %}>
+        {% if not first_site %}
+          <div class="muted" style="margin-top:.5rem;">Create a site to start tracking incidents.</div>
+        {% endif %}
+      </div>
+    {% endwith %}
+  {% endwith %}
 </section>
 
 <hr class="divider" aria-hidden="true" />
@@ -33,5 +81,34 @@
        hx-target="#records-block"
        hx-swap="outerHTML"></div>
 </section>
+
+<script>
+  (function () {
+    var picker = document.getElementById('site-picker');
+    var targetSel = '#incidents-block';
+
+    function loadSelected() {
+      if (!picker) return;
+      var opt = picker.selectedOptions && picker.selectedOptions[0];
+      var url = opt && opt.dataset && opt.dataset.url;
+      if (!url) return;
+      htmx.ajax('GET', url, {
+        target: targetSel,
+        swap: 'outerHTML',
+        values: { container_id: 'incidents-block' }
+      });
+    }
+
+    var btn = document.getElementById('site-load');
+    if (btn) btn.addEventListener('click', loadSelected);
+
+    if (picker) {
+      // Hit Enter to load
+      picker.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') { e.preventDefault(); loadSelected(); }
+      });
+    }
+  })();
+</script>
 
 {% endblock %}

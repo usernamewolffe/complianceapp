@@ -3,7 +3,14 @@
   <td>{{ i.get_classification_display }}</td>
   <td>{{ i.get_severity_display }}</td>
   <td>{{ i.aware_at|date:"Y-m-d H:i" }}</td>
-  <td>{{ i.get_status_display }}</td>
+
+  {# STATUS cell — replace the whole <td> with the partial (it renders its own <td>) #}
+  {% include "ui/partials/_status_cell.html" with incident=i org_id=org.id %}
+
+  {# Keep your deadline column if you want #}
   <td>{% if i.deadline_at %}{{ i.deadline_at|date:"Y-m-d H:i" }}{% else %}—{% endif %}</td>
-  <td>{% if i.is_overdue %}Yes{% else %}No{% endif %}</td>
+
+  {# TIMER cell — replace the Yes/No overdue column with the timer partial #}
+  {% include "ui/partials/_timer_cell.html" with incident=i %}
 </tr>
+

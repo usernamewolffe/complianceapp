@@ -1,63 +1,76 @@
-{# Incidents list + quick-create #}
-<div id="incidents-block">
-  {% if ok %}
-    <div style="margin:0 0 .75rem;padding:.5rem .75rem;border:1px solid #a3cfbb;background:#d1e7dd;border-radius:.5rem;color:#0f5132">
-      Incident saved.
-    </div>
+{# expects: org, site (optional), incidents=[{"obj": Incident, ...}], container_id (optional) #}
+{% with dom_prefix=container_id|default:'incidents-block' %}
+<div id="{{ dom_prefix }}" data-incidents-host>
+
+  <style>
+    /* Hide panels until content is loaded */
+    .inc-panel__content:empty { display: none; }
+    .inc-panel {
+      margin: .5rem 0;
+      border: 1px solid #e9ecef;
+      border-radius: .5rem;
+      padding: .5rem .75rem;
+      background: #fff;
+    }
+  </style>
+
+  {% if incidents %}
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Status</th>
+          <th scope="col">72-hour deadline</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for it in incidents %}
+          {% with inc=it.obj %}
+            {# Main row #}
+            <tr id="{{ dom_prefix }}-inc-{{ inc.id }}-row">
+              {# TITLE (includes Edit / Notes / Files buttons) #}
+              {% include "ui/partials/_title_cell.html" with org_id=org.id inc=inc dom_prefix=dom_prefix %}
+
+              {# STATUS (green “Reported”, modal + buttons, etc.) #}
+              {% include "ui/partials/_status_cell.html" with incident=inc org_id=org.id dom_prefix=dom_prefix %}
+
+              {# DEADLINE (use what you already had; swap to your timer partial if you like) #}
+              <td>
+                {% if inc.deadline_at %}{{ inc.deadline_at|date:"Y-m-d H:i" }}{% else %}—{% endif %}
+              </td>
+            </tr>
+
+            {# PANELS ROW: targets for the Notes/Files buttons #}
+            <tr id="{{ dom_prefix }}-inc-{{ inc.id }}-panels">
+              <td colspan="3">
+                <div id="{{ dom_prefix }}-inc-{{ inc.id }}-notes" class="inc-panel">
+                  <div id="{{ dom_prefix }}-inc-{{ inc.id }}-notes-content" class="inc-panel__content"></div>
+                </div>
+                <div id="{{ dom_prefix }}-inc-{{ inc.id }}-files" class="inc-panel">
+                  <div id="{{ dom_prefix }}-inc-{{ inc.id }}-files-content" class="inc-panel__content"></div>
+                </div>
+              </td>
+            </tr>
+          {% endwith %}
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <div class="muted">No incidents.</div>
   {% endif %}
 
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Classification</th>
-        <th>Severity</th>
-        <th>Aware at</th>
-        <th>Status</th>
-        <th>Disclosure Deadline</th>
-        <th>Overdue?</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for i in incidents %}
-        <tr>
-          <td>{{ i.title }}</td>
-            <td><a href="{% url 'incidents:detail' org.id i.id %}">{{ i.title }}</a></td>
-          <td>{{ i.get_classification_display }}</td>
-          <td>{{ i.get_severity_display }}</td>
-          <td>{{ i.aware_at|date:"Y-m-d H:i" }}</td>
-          <td>{{ i.get_status_display }}</td>
-          <td>{% if i.deadline_at %}{{ i.deadline_at|date:"Y-m-d H:i" }}{% else %}—{% endif %}</td>
-          <td>{% if i.is_overdue %}Yes{% else %}No{% endif %}</td>
-        </tr>
-      {% empty %}
-        <tr><td colspan="7" class="muted">No incidents yet.</td></tr>
-      {% endfor %}
-    </tbody>
-  </table>
-
-  <h3 style="margin-top:1rem">Add incident</h3>
-<form
-  hx-post="{% url 'incidents:incident-create' org.id %}"
-  hx-target="#incidents-block"
-  hx-swap="outerHTML"
-  style="display:grid;grid-template-columns:1fr 180px 160px 220px;gap:.5rem;align-items:center">
-
-    {% csrf_token %}
-    <input name="title" placeholder="Short title" required
-           style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
-    <select name="classification" style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
-      {% for value,label in classifications %}<option value="{{ value }}">{{ label }}</option>{% endfor %}
-    </select>
-    <select name="severity" style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
-      {% for value,label in severities %}<option value="{{ value }}">{{ label }}</option>{% endfor %}
-    </select>
-    <input type="datetime-local" name="aware_at"
-           style="padding:.45rem;border:1px solid #ced4da;border-radius:.5rem">
-    <textarea name="description" rows="3" placeholder="Details"
-              style="grid-column:1 / -1;padding:.45rem;border:1px solid #ced4da;border-radius:.5rem"></textarea>
-    <div style="grid-column:1 / -1">
-      <button class="btn" type="submit">Create incident</button>
-    </div>
-  </form>
+  {# New incident form (only when rendering for a specific site) #}
+  {% if site %}
+    <form id="add-incident-form"
+          hx-post="{% url 'incidents:create' org_id=org.id site_id=site.id %}"
+          hx-target="#{{ dom_prefix }}"
+          hx-swap="outerHTML"
+          hx-disabled-elt="button"
+          style="display:flex;gap:.5rem;align-items:center;margin-top:.5rem">
+      {% csrf_token %}
+      <input name="title" placeholder="Incident title" style="flex:1;min-width:220px" />
+      <button class="btn" type="submit">Add incident</button>
+    </form>
+  {% endif %}
 </div>
+{% endwith %}

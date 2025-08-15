@@ -1,0 +1,46 @@
+{# Wrap with the same id your _sites.html expects so outerHTML swap works #}
+<div id="{{ container_id }}">
+  <div style="margin-bottom:.5rem; display:flex; justify-content:space-between; align-items:center;">
+    <strong>Incidents</strong>
+        <button
+          hx-get="{% url 'incidents:incident-create' org_id=org_id site_id=site_id %}"
+          hx-vals='{"container_id":"{{ container_id }}"}'
+          hx-target="#{{ container_id }}"
+          hx-swap="outerHTML">
+          New incident
+        </button>
+  </div>
+
+  {% if incidents %}
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Severity</th>
+          <th>Aware</th>
+          <th>Obligations</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for inc in incidents %}
+          <tr>
+            <td>{{ inc.title }}</td>
+            <td>{{ inc.get_severity_display }}</td>
+            <td>{{ inc.aware_at|date:"Y-m-d H:i" }}</td>
+            <td>
+              <div class="obligations" style="display:flex; gap:.5rem; flex-wrap:wrap;">
+                {% for ob in inc.obligations.all %}
+                  {% include "ui/partials/_obligation_cell.html" with ob=ob org_id=org_id site_id=site_id incident_id=inc.id %}
+                {% empty %}
+                  <em>None</em>
+                {% endfor %}
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <em>No incidents yet.</em>
+  {% endif %}
+</div>

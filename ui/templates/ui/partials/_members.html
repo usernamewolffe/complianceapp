@@ -1,12 +1,15 @@
 {# ui/templates/ui/partials/_members.html #}
 <div id="members-block">
 
+  {# Flash banner (swapped with the block) #}
   {% if error %}
-    <div style="margin:0 0 .75rem 0;padding:.5rem .75rem;border:1px solid #f5c2c7;background:#f8d7da;border-radius:.5rem;color:#842029">
+    <div class="flash error" role="alert"
+         style="margin:0 0 .75rem;padding:.5rem .75rem;border:1px solid #f1aeb5;background:#f8d7da;border-radius:.5rem;color:#842029">
       {{ error }}
     </div>
   {% elif ok %}
-    <div style="margin:0 0 .75rem 0;padding:.5rem .75rem;border:1px solid #a3cfbb;background:#d1e7dd;border-radius:.5rem;color:#0f5132">
+    <div class="flash ok" role="status"
+         style="margin:0 0 .75rem;padding:.5rem .75rem;border:1px solid #a3cfbb;background:#d1e7dd;border-radius:.5rem;color:#0f5132">
       Saved.
     </div>
   {% endif %}
@@ -33,7 +36,7 @@
           <td>
             {% if acting_role == "owner" %}
               <form
-                hx-post="{% url 'org-member-update' org.id m.id %}"
+                hx-post="{% url 'orgs:org-member-update' org.id m.id %}"
                 hx-target="#members-block"
                 hx-swap="outerHTML"
                 hx-disabled-elt="select">
@@ -60,7 +63,7 @@
                 <span class="muted">This is you</span>
               {% else %}
                 <form
-                  hx-post="{% url 'org-member-toggle' org.id m.id %}"
+                  hx-post="{% url 'orgs:org-member-toggle' org.id m.id %}"
                   hx-target="#members-block"
                   hx-swap="outerHTML"
                   hx-disabled-elt="button"
@@ -106,7 +109,7 @@
                 <span class="muted">—</span>
               {% else %}
                 <form
-                  hx-post="{% url 'invitation_cancel' org.id inv.id %}"
+                  hx-post="{% url 'orgs:invitation-cancel' org.id inv.id %}"
                   hx-target="#members-block"
                   hx-swap="outerHTML"
                   hx-disabled-elt="button"
@@ -116,7 +119,7 @@
                   <button class="btn btn-outline">Cancel</button>
                 </form>
                 <form
-                  hx-post="{% url 'invitation_resend' org.id inv.id %}"
+                  hx-post="{% url 'orgs:invitation-resend' org.id inv.id %}"
                   hx-target="#members-block"
                   hx-swap="outerHTML"
                   hx-disabled-elt="button"
@@ -136,7 +139,7 @@
 
   {% if acting_role == "owner" or acting_role == "admin" %}
     <form
-      hx-post="{% url 'org-invite-create' org.id %}"
+      hx-post="{% url 'orgs:org-invite-create' org.id %}"
       hx-target="#members-block"
       hx-swap="outerHTML"
       hx-disabled-elt="button"

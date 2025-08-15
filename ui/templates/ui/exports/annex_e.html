@@ -1,0 +1,138 @@
+{# templates/ui/exports/annex_e.html #}
+{# expects: inc (Incident), org (Org), data (dict from incident_to_annex_e) #}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Annex E — Incident {{ inc.id }} ({{ inc.title|default:"Untitled" }})</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root { --ink:#111; --muted:#666; --line:#ddd; --accent:#0b5; --bg:#fff; }
+    html,body { background: var(--bg); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .wrap { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+    header { border-bottom: 2px solid var(--line); padding-bottom: 10px; margin-bottom: 18px; }
+    h1 { font-size: 1.4rem; margin: 0 0 4px; }
+    .muted { color: var(--muted); }
+    .kvs { width: 100%; border-collapse: collapse; margin: 6px 0 18px; }
+    .kvs th, .kvs td { border: 1px solid var(--line); text-align: left; vertical-align: top; padding: 8px 10px; }
+    .kvs th { width: 260px; background: #fafafa; font-weight: 600; }
+    h2 { font-size: 1.1rem; margin: 20px 0 8px; border-left: 4px solid var(--accent); padding-left: 8px; }
+    ul { margin: 0; padding-left: 18px; }
+    .pill { display:inline-block; padding:2px 8px; border:1px solid var(--line); border-radius:999px; font-size:12px; }
+    .grid-2 { display:grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+    @media print {
+      .wrap { margin: 0; }
+      .no-print { display: none !important; }
+      a[href]:after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="no-print" style="text-align:right; margin-bottom:6px;">
+      <small class="muted">Generated {{ now|date:"Y-m-d H:i" }}</small>
+    </div>
+    <header>
+      <h1>Annex E — NIS Incident Notification</h1>
+      <div class="muted">
+        Organisation: <strong>{{ data.org_details.organisation|default:"" }}</strong> ·
+        Essential service: <strong>{{ data.org_details.essential_service|default:"" }}</strong><br>
+        Incident: <strong>#{{ inc.id }}</strong> — {{ inc.title|default:"(untitled)" }}
+      </div>
+    </header>
+
+    <h2>1) Contact details</h2>
+    <table class="kvs">
+      <tr><th>Name</th><td>{{ data.contact_info.name|default:"" }}</td></tr>
+      <tr><th>Role</th><td>{{ data.contact_info.role|default:"" }}</td></tr>
+      <tr><th>Email</th><td>{{ data.contact_info.email|default:"" }}</td></tr>
+      <tr><th>Phone</th><td>{{ data.contact_info.phone|default:"" }}</td></tr>
+    </table>
+
+    <h2>2) Organisation & service</h2>
+    <table class="kvs">
+      <tr><th>Organisation</th><td>{{ data.org_details.organisation|default:"" }}</td></tr>
+      <tr><th>Essential service</th><td>{{ data.org_details.essential_service|default:"" }}</td></tr>
+      <tr><th>Sites / assets</th>
+          <td>
+            {% if data.org_details.sites_assets and data.org_details.sites_assets.0 %}
+              <ul>{% for s in data.org_details.sites_assets %}<li>{{ s }}</li>{% endfor %}</ul>
+            {% else %}—{% endif %}
+          </td>
+      </tr>
+      <tr><th>Internal incident ID</th><td>{{ data.org_details.internal_incident_id|default:"" }}</td></tr>
+    </table>
+
+    <h2>3) Key timestamps</h2>
+    <table class="kvs">
+      <tr><th>Detected / awareness time</th><td>{{ data.incident_times.detected_at|default:"" }}</td></tr>
+      <tr><th>Occurred (if known)</th><td>{{ data.incident_times.occurred_at|default:"" }}</td></tr>
+      <tr><th>Reported internally</th><td>{{ data.incident_times.reported_internally_at|default:"" }}</td></tr>
+    </table>
+
+    <h2>4) Classification</h2>
+    <table class="kvs">
+      <tr><th>Type of incident</th><td>{{ data.type_of_incident|default:"" }}</td></tr>
+      <tr><th>Status</th><td>{{ data.status|default:"" }}</td></tr>
+      <tr><th>Stage</th><td>{{ data.stage|default:"" }}</td></tr>
+      <tr><th>Categorisation</th><td>{{ data.categorisation|default:"" }}</td></tr>
+      <tr><th>Severity</th><td>{{ data.severity|default:"" }}</td></tr>
+    </table>
+
+    <h2>5) Narrative & impact</h2>
+    <table class="kvs">
+      <tr><th>Incident types</th>
+        <td>
+          {% if data.description.incident_types and data.description.incident_types.0 %}
+            <ul>{% for t in data.description.incident_types %}<li>{{ t }}</li>{% endfor %}</ul>
+          {% else %}—{% endif %}
+        </td>
+      </tr>
+      <tr><th>Summary</th><td>{{ data.description.summary|default:"" }}</td></tr>
+      <tr><th>How discovered</th><td>{{ data.description.discovery|default:"" }}</td></tr>
+      <tr><th>Duration</th><td>{{ data.description.duration|default:"" }}</td></tr>
+      <tr><th>Locations</th>
+        <td>
+          {% if data.description.locations and data.description.locations.0 %}
+            <ul>{% for l in data.description.locations %}<li>{{ l }}</li>{% endfor %}</ul>
+          {% else %}—{% endif %}
+        </td>
+      </tr>
+      <tr><th>Services/systems affected</th>
+        <td>
+          {% if data.description.services_systems_affected and data.description.services_systems_affected.0 %}
+            <ul>{% for s in data.description.services_systems_affected %}<li>{{ s }}</li>{% endfor %}</ul>
+          {% else %}—{% endif %}
+        </td>
+      </tr>
+      <tr><th>Impact on services/users</th><td>{{ data.description.impact_on_services_users|default:"" }}</td></tr>
+      <tr><th>Safety impact</th><td>{{ data.description.impact_on_safety|default:"" }}</td></tr>
+      <tr><th>Suspected cause</th><td>{{ data.description.suspected_cause|default:"" }}</td></tr>
+      <tr><th>Cross-border impact</th><td>{{ data.description.cross_border_impact|default:"" }}</td></tr>
+      <tr><th>Other relevant info</th><td>{{ data.description.other_relevant_info|default:"" }}</td></tr>
+    </table>
+
+    <h2>6) Root cause</h2>
+    <table class="kvs">
+      <tr><th>Category</th><td>{{ data.root_cause.category|default:"" }}</td></tr>
+      <tr><th>If “other”, details</th><td>{{ data.root_cause.other_text|default:"" }}</td></tr>
+    </table>
+
+    <h2>7) Mitigations & notifications</h2>
+    <table class="kvs">
+      <tr><th>Mitigations (done/planned)</th><td>{{ data.mitigations|default:"" }}</td></tr>
+      <tr><th>Who else informed</th>
+        <td>
+          {% if data.who_else_informed and data.who_else_informed.0 %}
+            <ul>{% for w in data.who_else_informed %}<li>{{ w }}</li>{% endfor %}</ul>
+          {% else %}—{% endif %}
+        </td>
+      </tr>
+    </table>
+
+    <div class="muted" style="margin-top:16px;">
+      Prepared from system record #{{ inc.id }} · Generated {{ now|date:"Y-m-d H:i" }}
+    </div>
+  </div>
+</body>
+</html>

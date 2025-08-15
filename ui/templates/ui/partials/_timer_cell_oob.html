@@ -1,0 +1,8 @@
+{# templates/ui/partials/_timer_cell_oob.html #}
+<td
+  id="{{ dom_prefix }}-incident-{{ incident.id }}-timer"
+  hx-swap-oob="true"
+  class="{% if not incident.is_reported and incident.deadline_at %}js-countdown{% else %}no-countdown{% endif %}"
+>
+  <span class="{{ incident.timer_css }}">{{ incident.timer_text }}</span>
+</td>

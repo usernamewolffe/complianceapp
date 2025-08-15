@@ -1,0 +1,16 @@
+{# Replaces the status cell with this form; on submit we swap back the updated status cell #}
+<form
+  hx-post="/orgs/{{ org.id }}/incidents/{{ inc.id }}/file/submit/"
+  hx-target="#status-{{ inc.id }}"
+  hx-swap="outerHTML"
+  style="display:inline-flex;gap:.5rem;align-items:center;flex-wrap:wrap"
+>
+  {% csrf_token %}
+  <input name="reference" placeholder="Reference" style="min-width:12rem">
+  <input name="notes" placeholder="Notes" style="min-width:16rem">
+  <button class="btn" type="submit">Mark filed</button>
+  <button class="btn btn-outline" type="button"
+          hx-get="/orgs/{{ org.id }}/incidents/{{ inc.id }}/file/form/?cancel=1"
+          hx-target="#status-{{ inc.id }}"
+          hx-swap="outerHTML">Cancel</button>
+</form>

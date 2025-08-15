@@ -1,0 +1,44 @@
+{# Inserts under an incident row as a full #}
+<tr class="subrow" id="notes-row-{{ inc.id }}">
+  <td colspan="3">
+    <div id="notes-{{ inc.id }}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">
+        <h4 style="margin:0">Notes</h4>
+        <button class="btn btn-link"
+                hx-get="{% url 'incidents:notes-block' org_id=org.id incident_id=inc.id %}"
+                hx-target="#notes-row-{{ inc.id }}"
+                hx-swap="outerHTML">Refresh</button>
+      </div>
+
+      {% if notes %}
+        <ul style="padding-left:1rem;margin:0 0 .75rem 0">
+          {% for n in notes %}
+            <li style="margin:.25rem 0;">
+              <div><strong>{{ n.created_by|default:"(user)" }}</strong>
+                <span class="muted">· {{ n.created_at|date:"Y-m-d H:i" }}</span></div>
+              <div>{{ n.body|linebreaksbr }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <div class="muted" style="margin-bottom:.75rem">No notes yet.</div>
+      {% endif %}
+
+      <form
+        hx-post="{% url 'incidents:note-create' org_id=org.id incident_id=inc.id %}"
+        hx-target="#notes-{{ inc.id }}"
+        hx-swap="outerHTML"
+        hx-disabled-elt="button"
+        style="display:flex;gap:.5rem;align-items:flex-start;flex-wrap:wrap"
+      >
+        {% csrf_token %}
+        <textarea name="body" rows="2" required
+                  placeholder="Add a note..."
+                  style="flex:2;min-width:260px;padding:.25rem .5rem"></textarea>
+        <button class="btn" type="submit">Add</button>
+        <button class="btn btn-link" type="button"
+                onclick="document.getElementById('notes-row-{{ inc.id }}')?.remove()">Close</button>
+      </form>
+    </div>
+  </td>
+</tr>
