@@ -1,12 +1,15 @@
 # orgs/views.py
+from __future__ import annotations
+
+import logging
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
-
+from django.urls import reverse
 from django.http import HttpResponseForbidden
 from django.utils import timezone
 from django.views.decorators.http import require_GET, require_POST, require_http_methods
 from django.shortcuts import get_object_or_404, render, redirect
-
+from django.template import TemplateDoesNotExist
 
 from rest_framework import viewsets, decorators, response, status, permissions as drf_permissions
 
@@ -14,7 +17,6 @@ from rest_framework import viewsets, decorators, response, status, permissions a
 from .models import Org, Membership as MembershipModel, OrgInvite, Site
 from .forms import SiteForm
 from .permissions import Membership as MembershipPermission, RequireRole
-from .serializers import OrgInviteSerializer, MembershipSerializer
 
 # Optional Org serializer fallback (if not already defined)
 try:
@@ -26,6 +28,8 @@ except ImportError:  # pragma: no cover
             model = Org
             fields = "__all__"
 
+from .serializers import OrgInviteSerializer, MembershipSerializer
+
 # Guard helpers
 from orgs.logic.guards import (
     GuardError,
@@ -34,12 +38,21 @@ from orgs.logic.guards import (
     guard_toggle_active,
 )
 
+log = logging.getLogger(__name__)
 User = get_user_model()
 
-# --- helper: admin/owner can manage sites ---
-def _can_manage_sites(request, org) -> bool:
+
+# --------------------------------------------------------------------------------------
+# Helpers
+# --------------------------------------------------------------------------------------
+def _require_member(request, org: Org) -> bool:
+    """User must be an active member of the org."""
+    return MembershipModel.objects.filter(org=org, user=request.user, is_active=True).exists()
+
+def _can_manage_sites(request, org: Org) -> bool:
     m = MembershipModel.objects.filter(org=org, user=request.user, is_active=True).first()
     return bool(m and m.role in (MembershipModel.OWNER, MembershipModel.ADMIN))
+
 
 # ======================================================================================
 # API: /api/me  (current user + active memberships)
@@ -143,6 +156,77 @@ class OrgViewSet(viewsets.ModelViewSet):
         # TODO: send email with inv.token
         return response.Response(OrgInviteSerializer(inv).data, status=201)
 
+@login_required
+@require_POST
+def org_invite_create(request, org_id):
+    org = get_object_or_404(Org, id=org_id)
+
+    # Only owners/admins can invite
+    actor = MembershipModel.objects.filter(org=org, user=request.user, is_active=True).first()
+    if not actor or actor.role not in (MembershipModel.OWNER, MembershipModel.ADMIN):
+        return render_members_block(request, org, error="Only owners or admins can send invitations.")
+
+    email = (request.POST.get("email") or "").strip()
+    role = (request.POST.get("role") or MembershipModel.MEMBER).lower()
+
+    if not email:
+        return render_members_block(request, org, error="Email is required.")
+    if role not in dict(MembershipModel.ROLES):
+        return render_members_block(request, org, error="Invalid role.")
+
+    # Prevent duplicate memberships / overlapping invites
+    if MembershipModel.objects.filter(org=org, user__email=email).exists():
+        return render_members_block(request, org, error="That user is already a member.")
+    if OrgInvite.objects.filter(
+        org=org,
+        email=email,
+        cancelled_at__isnull=True,
+        used_at__isnull=True,
+        expires_at__gte=timezone.now(),
+    ).exists():
+        return render_members_block(request, org, error="There is already a pending invite for that email.")
+
+    OrgInvite.objects.create(email=email, org=org, role=role, invited_by=request.user)
+    return render_members_block(request, org, ok=True)
+
+@login_required
+@require_POST
+def invitation_cancel(request, org_id, inv_id):
+    org = get_object_or_404(Org, id=org_id)
+
+    # Only owners/admins can cancel
+    actor = MembershipModel.objects.filter(org=org, user=request.user, is_active=True).first()
+    if not actor or actor.role not in (MembershipModel.OWNER, MembershipModel.ADMIN):
+        return render_members_block(request, org, error="Only owners or admins can cancel invitations.")
+
+    inv = get_object_or_404(OrgInvite, org=org, id=inv_id)
+    is_pending = not inv.used_at and not inv.cancelled_at and inv.expires_at >= timezone.now()
+    if not is_pending:
+        return render_members_block(request, org, error="Only pending invitations can be cancelled.")
+
+    inv.cancelled_at = timezone.now()
+    inv.save(update_fields=["cancelled_at"])
+    return render_members_block(request, org, ok=True)
+
+
+@login_required
+@require_POST
+def invitation_resend(request, org_id, inv_id):
+    org = get_object_or_404(Org, id=org_id)
+
+    # Only owners/admins can resend
+    actor = MembershipModel.objects.filter(org=org, user=request.user, is_active=True).first()
+    if not actor or actor.role not in (MembershipModel.OWNER, MembershipModel.ADMIN):
+        return render_members_block(request, org, error="Only owners or admins can resend invitations.")
+
+    inv = get_object_or_404(OrgInvite, org=org, id=inv_id)
+    is_pending = not inv.used_at and not inv.cancelled_at
+    if not is_pending:
+        return render_members_block(request, org, error="Only pending invitations can be resent.")
+
+    inv.expires_at = timezone.now() + timezone.timedelta(days=7)
+    inv.save(update_fields=["expires_at"])
+    return render_members_block(request, org, ok=True)
 
 # ======================================================================================
 # API: Accept invite
@@ -220,7 +304,7 @@ def render_members_block(request, org, *, ok=None, error=None):
 def org_members_block(request, org_id):
     """HTMX endpoint that renders the members block."""
     org = get_object_or_404(Org, id=org_id)
-    if not MembershipModel.objects.filter(org=org, user=request.user, is_active=True).exists():
+    if not _require_member(request, org):
         return HttpResponseForbidden("You don't have access to this organisation.")
     return render_members_block(request, org)
 
@@ -229,7 +313,7 @@ def org_members_block(request, org_id):
 def org_members_page(request, org_id):
     """Full page that shows the members block (bookmarkable)."""
     org = get_object_or_404(Org, id=org_id)
-    if not MembershipModel.objects.filter(org=org, user=request.user, is_active=True).exists():
+    if not _require_member(request, org):
         return HttpResponseForbidden("You don't have access to this organisation.")
     return render_members_block(request, org)
 
@@ -308,104 +392,18 @@ def org_member_toggle(request, org_id, member_id):
 
 
 # ======================================================================================
-# UI: Invitation actions (views used in orgs/urls.py)
-# ======================================================================================
-@login_required
-@require_POST
-def org_invite_create(request, org_id):
-    org = get_object_or_404(Org, id=org_id)
-    actor = _actor_member(request, org_id)
-
-    # Only owners/admins can invite
-    if not actor or actor.role not in (MembershipModel.OWNER, MembershipModel.ADMIN):
-        return render_members_block(request, org, error="Only owners or admins can send invitations.")
-
-    email = (request.POST.get("email") or "").strip()
-    role = (request.POST.get("role") or MembershipModel.MEMBER).lower()
-
-    if not email:
-        return render_members_block(request, org, error="Email is required.")
-    if role not in dict(MembershipModel.ROLES):
-        return render_members_block(request, org, error="Invalid role.")
-
-    # Prevent duplicates / repeated invites
-    if MembershipModel.objects.filter(org=org, user__email=email).exists():
-        return render_members_block(request, org, error="That user is already a member.")
-    if OrgInvite.objects.filter(
-        org=org,
-        email=email,
-        cancelled_at__isnull=True,
-        used_at__isnull=True,
-        expires_at__gte=timezone.now(),
-    ).exists():
-        return render_members_block(request, org, error="There is already a pending invite for that email.")
-
-    OrgInvite.objects.create(email=email, org=org, role=role, invited_by=request.user)
-    return render_members_block(request, org, ok=True)
-
-@login_required
-@require_POST
-def invitation_cancel(request, org_id, inv_id):
-    actor = _actor_member(request, org_id)
-    org = get_object_or_404(Org, id=org_id)
-
-    try:
-        ensure_owner(actor)
-    except GuardError as e:
-        return render_members_block(request, org, error=str(e))
-
-    inv = get_object_or_404(OrgInvite, org_id=org_id, id=inv_id)
-    is_pending = not inv.used_at and not inv.cancelled_at and (inv.expires_at >= timezone.now())
-    if not is_pending:
-        return render_members_block(request, org, error="Only pending invitations can be cancelled.")
-
-    inv.cancelled_at = timezone.now()
-    inv.save(update_fields=["cancelled_at"])
-    return render_members_block(request, org, ok=True)
-
-@login_required
-@require_POST
-def invitation_resend(request, org_id, inv_id):
-    actor = _actor_member(request, org_id)
-    org = get_object_or_404(Org, id=org_id)
-
-    try:
-        ensure_owner(actor)
-    except GuardError as e:
-        return render_members_block(request, org, error=str(e))
-
-    inv = get_object_or_404(OrgInvite, org_id=org_id, id=inv_id)
-    is_pending = not inv.used_at and not inv.cancelled_at and (inv.expires_at >= timezone.now())
-    if not is_pending:
-        return render_members_block(request, org, error="Only pending invitations can be resent.")
-
-    inv.expires_at = timezone.now() + timezone.timedelta(days=7)
-    inv.save(update_fields=["expires_at"])
-    return render_members_block(request, org, ok=True)
-
-
-# ======================================================================================
 # UI: Sites block + actions
 # ======================================================================================
-def _require_member(request, org: Org) -> bool:
-    """User must be an active member of the org."""
-    return MembershipModel.objects.filter(org=org, user=request.user, is_active=True).exists()
-
 @login_required
 @require_GET
 def org_sites_block(request, org_id):
+    """HTMX endpoint: render the Sites block for an org."""
     org = get_object_or_404(Org, pk=org_id)
     if not _require_member(request, org):
         return HttpResponseForbidden("You don't have access to this organisation.")
 
     sites = org.sites.order_by("name")
-
-    acting = MembershipModel.objects.filter(
-        org=org, user=request.user, is_active=True
-    ).first()
-    can_manage_sites = bool(
-        acting and acting.role in (MembershipModel.OWNER, MembershipModel.ADMIN)
-    )
+    can_manage_sites = _can_manage_sites(request, org)
 
     return render(
         request,
@@ -413,86 +411,126 @@ def org_sites_block(request, org_id):
         {"org": org, "sites": sites, "can_manage_sites": can_manage_sites},
     )
 
+
 @login_required
 @require_http_methods(["GET", "POST"])
 def site_create(request, org_id):
+    """
+    GET  -> returns content-only form partial into the create modal body
+    POST -> on success: returns refreshed #sites-block (via HX headers)
+            on invalid: returns the form partial (with errors) back into the modal body
+    """
     org = get_object_or_404(Org, pk=org_id)
     if not _require_member(request, org):
         return HttpResponseForbidden("You don't have access to this organisation.")
 
-    if request.method == "GET":
+    if request.method == "POST":
+        form = SiteForm(request.POST)
+        if form.is_valid():
+            site = form.save(commit=False)
+            site.org = org
+            site.save()
+
+            sites = Site.objects.filter(org=org).order_by("name")
+            resp = render(request, "ui/partials/_sites.html", {
+                "org": org,
+                "sites": sites,
+                "can_manage_sites": _can_manage_sites(request, org),
+            })
+            # Tell HTMX to retarget the swap at the sites list (not the modal body)
+            resp["HX-Retarget"] = "#sites-block"
+            resp["HX-Reswap"] = "outerHTML"
+            return resp
+
+        # invalid -> fall through to re-render the form into the modal body (200)
+
+    else:
         form = SiteForm()
-        return render(request, "ui/partials/_site_create_form.html", {"org": org, "form": form})
 
-    form = SiteForm(request.POST)
-    if form.is_valid():
-        site = form.save(commit=False)
-        site.org = org
-        site.save()
-        sites = Site.objects.filter(org=org).order_by("name")
-        return render(
-            request,
-            "ui/partials/_sites.html",
-            {"org": org, "sites": sites, "can_manage_sites": _can_manage_sites(request, org)},
-            status=201,
-        )
+    return render(request, "ui/partials/_site_create_form.html", {"org": org, "form": form})
 
-    return render(request, "ui/partials/_site_create_form.html", {"org": org, "form": form}, status=400)
-
-#site deletion
-def _require_member(request, org: Org) -> bool:
-    from orgs.models import Membership
-    return Membership.objects.filter(org=org, user=request.user, is_active=True).exists()
 
 @login_required
 @require_POST
 def site_delete(request, org_id, site_id):
+    """POST-only, returns refreshed Sites block (safe delete)."""
     org = get_object_or_404(Org, pk=org_id)
     if not _require_member(request, org):
         return HttpResponseForbidden("You don't have access to this organisation.")
 
     site = get_object_or_404(Site, pk=site_id, org=org)
 
-    # Optional safety: block deletion if incidents exist (better than cascading)
+    # Optional safety: block deletion if incidents exist
     if hasattr(site, "incidents") and site.incidents.exists():
-        # Return the sites block with an inline error message instead of deleting
         sites = Site.objects.filter(org=org).order_by("name")
         return render(
             request,
             "ui/partials/_sites.html",
-            {"org": org, "sites": sites, "error": f"Cannot delete '{site.name}' – incidents exist."},
-            status=400,
+            {
+                "org": org,
+                "sites": sites,
+                "can_manage_sites": _can_manage_sites(request, org),
+                "error": f"Cannot delete '{site.name}' – incidents exist.",
+            },
         )
 
     site.delete()
 
-    # Re-render your sites list block so HTMX swaps it in
     sites = Site.objects.filter(org=org).order_by("name")
-    return render(request, "ui/partials/_sites.html", {"org": org, "sites": sites})
+    return render(
+        request,
+        "ui/partials/_sites.html",
+        {"org": org, "sites": sites, "can_manage_sites": _can_manage_sites(request, org)},
+    )
 
 
 @login_required
 @require_http_methods(["GET", "POST"])
 def site_edit(request, org_id, site_id):
+    """
+    GET:
+      - If HTMX: return a modal snippet (dialog + form) appended to <body>.
+      - Else: return a full page 'ui/site_edit.html'.
+    POST:
+      - Save and redirect back to ?next=… (or org detail) on normal request.
+      - If HTMX POST, you can adapt to return a refreshed sites block (not used by default here).
+    """
     org = get_object_or_404(Org, pk=org_id)
-    site = get_object_or_404(Site, pk=site_id, org=org)
+    if not _require_member(request, org):
+        return HttpResponseForbidden("You don't have access to this organisation.")
 
-    # Where to go back to
-    default_next = reverse("orgs:org-detail", args=[org.id])  # or f"/orgs/{org.id}/"
+    site = get_object_or_404(Site, pk=site_id, org=org)
+    default_next = reverse("orgs:org-detail", args=[org.id])  # ensure this URL name exists
     next_url = request.GET.get("next") or request.POST.get("next") or default_next
 
     if request.method == "POST":
         if "cancel" in request.POST:
             return redirect(next_url)
 
-        form = SiteForm(request.POST, instance=site)   # use your existing form
+        form = SiteForm(request.POST, instance=site)
         if form.is_valid():
             form.save()
             return redirect(next_url)
     else:
         form = SiteForm(instance=site)
 
-    return render(request, "ui/site_edit.html", {
-        "org": org, "site": site, "form": form, "next": next_url
-    })
+    # inside site_edit (after form.is_valid() and form.save())
+    if request.headers.get("HX-Request"):
+        sites = Site.objects.filter(org=org).order_by("name")
+        resp = render(request, "ui/partials/_sites.html", {
+            "org": org,
+            "sites": sites,
+            "can_manage_sites": _can_manage_sites(request, org),
+        })
+        # (hx-target already points to #sites-block, so no headers are strictly needed)
+        # If you prefer headers-based retargeting, you can add:
+        # resp["HX-Retarget"] = "#sites-block"
+        # resp["HX-Reswap"] = "outerHTML"
+        return resp
+
+    # non-HTMX:
+    return redirect(next_url)
+
+
+
 

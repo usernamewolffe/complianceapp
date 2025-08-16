@@ -94,3 +94,12 @@
   <script src="{% static 'core/js/htmx-hooks.js' %}"></script>
 </body>
 </html>
+
+<script>
+  document.addEventListener('htmx:afterSwap', function (e) {
+    if (e.detail?.target?.id === 'sites-block') {
+      document.getElementById('site-create-modal')?.close();
+      document.getElementById('site-edit-modal')?.close();
+    }
+  });
+</script>

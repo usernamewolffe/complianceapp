@@ -28,19 +28,11 @@
 
             {% if can_manage_sites %}
               <td style="white-space:nowrap; text-align:right">
-                {# --- EITHER: open edit modal (HTMX) --- #}
                 <a class="btn"
                    hx-get="{% url 'orgs:site-edit' org_id=org.id site_id=s.id %}"
                    hx-target="body"
                    hx-swap="beforeend">Edit</a>
 
-                {# --- OR: normal page nav with return (remove if using modal) --- #}
-                {# <a class="btn"
-                      href="{% url 'orgs:site-edit' org_id=org.id site_id=s.id %}?next=/orgs/{{ org.id }}/">
-                     Edit
-                   </a> #}
-
-                {# Safe delete: POST + hx-confirm + CSRF, swaps the whole sites block #}
                 <form
                   hx-post="{% url 'orgs:site-delete' org_id=org.id site_id=s.id %}"
                   hx-target="#sites-block"
@@ -62,34 +54,66 @@
 
   {% if can_manage_sites %}
     <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-top:.75rem">
-      <button class="btn" type="button"
-              hx-get="{% url 'orgs:site-create' org.id %}"
-              hx-target="#site-create-modal-content"
-              hx-swap="innerHTML"
-              onclick="document.getElementById('site-create-modal').showModal()">
+      {# Add site button #}
+      <button class="btn"
+              type="button"
+              id="open-site-create"
+              data-url="{% url 'orgs:site-create' org_id=org.id %}">
         Add site
       </button>
     </div>
 
-    {# Modal shell for Create; content loaded via HX #}
-    <dialog id="site-create-modal" class="c-modal" aria-labelledby="site-create-title">
-      <div class="c-modal__card" style="max-width:820px;width:90vw">
-        <div class="c-modal__header" style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding:12px 16px">
-          <h3 id="site-create-title" class="c-modal__title" style="margin:0;font-size:1.1rem">Add site</h3>
-          <button type="button" class="c-modal__x" onclick="this.closest('dialog').close()" style="background:none;border:none;font-size:1.25rem;cursor:pointer">×</button>
+    {# --- Single modal shell (keep exactly one of these on the page) --- #}
+    <dialog id="site-create-modal"
+            style="width:96vw;height:92vh;max-width:none;margin:0;padding:0;background:#fff;border:0;border-radius:12px">
+      <div style="width:100%;height:100%;display:flex;flex-direction:column;background:#fff">
+        <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding:12px 16px">
+          <h3 style="margin:0;font-size:1.1rem">Add site</h3>
+          <button type="button"
+                  onclick="document.getElementById('site-create-modal').close()"
+                  style="background:none;border:none;font-size:1.25rem;cursor:pointer">×</button>
         </div>
-        <div id="site-create-modal-content" style="padding:12px 16px">Loading…</div>
+        <div id="site-create-modal-content" style="flex:1 1 auto;overflow:auto;padding:16px 20px">Loading…</div>
       </div>
-      <style>
-        .c-modal { border: none; border-radius: 12px; padding: 0; }
-        .c-modal::backdrop { background: rgba(0,0,0,.35); }
-      </style>
-      <script>
-        (function(dlg){
-          if (!dlg) return;
-          dlg.addEventListener('close', () => dlg.removeAttribute('open'));
-        })(document.getElementById('site-create-modal'));
-      </script>
     </dialog>
+
+    <style>
+      #site-create-modal::backdrop { background: rgba(0,0,0,.35); }
+      /* Make any injected content stretch */
+      #site-create-modal .c-modal__card,
+      #site-create-modal form,
+      #site-create-modal .container,
+      #site-create-modal .panel,
+      #site-create-modal .card,
+      #site-create-modal .wrapper {
+        max-width:none !important; width:100% !important; height:100% !important;
+      }
+    </style>
+
+    <script>
+      // Open the modal and load the form
+      document.addEventListener('click', function (e) {
+        if (e.target && e.target.id === 'open-site-create') {
+          const dlg = document.getElementById('site-create-modal');
+          if (!dlg) return;
+          (dlg.showModal ? dlg.showModal() : dlg.setAttribute('open','open'));
+          const url = e.target.getAttribute('data-url');
+          if (window.htmx) {
+            htmx.ajax('GET', url, { target: '#site-create-modal-content', swap: 'innerHTML' });
+          } else {
+            fetch(url).then(r => r.text()).then(html => {
+              document.getElementById('site-create-modal-content').innerHTML = html;
+            });
+          }
+        }
+      });
+
+      // Close the modal after sites list refreshes
+      document.addEventListener('htmx:afterSwap', function (evt) {
+        if (evt.detail?.target?.id === 'sites-block') {
+          document.getElementById('site-create-modal')?.close();
+        }
+      });
+    </script>
   {% endif %}
 </div>

@@ -1,167 +1,182 @@
 {# ui/templates/ui/partials/_site_edit_form.html #}
 {# expects: org, site, form in context #}
 
-<dialog id="site-edit-modal" class="c-modal" open aria-labelledby="site-edit-title">
+<dialog id="site-edit-modal" class="c-modal" open aria-labelledby="site-edit-title"
+        style="width:96vw;height:92vh;max-width:none;margin:0;padding:0;background:#fff;border:0;border-radius:12px">
   <form
     id="site-edit-form"
     method="post"
     hx-post="{% url 'orgs:site-edit' org_id=org.id site_id=site.id %}"
-    hx-target="#org-sites-block"
+    hx-target="#sites-block"         {# server returns refreshed sites list #}
     hx-swap="outerHTML"
     hx-disabled-elt="button"
-    hx-on="htmx:afterRequest: if (event.detail.successful) this.closest('dialog')?.close()"
-    style="max-width:820px;width:90vw"
+    style="height:100%;display:flex;flex-direction:column"
     novalidate
   >
     {% csrf_token %}
 
-    <div class="c-modal__header">
-      <h3 id="site-edit-title" class="c-modal__title">Edit site</h3>
+    <div class="c-modal__header" style="display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;padding:12px 16px">
+      <h3 id="site-edit-title" class="c-modal__title" style="margin:0;font-size:1.1rem">Edit site – {{ site.name }}</h3>
 
-      {# Close (X): refresh sites list then close #}
+      {# Close (X): just close modal; if you want a refresh on cancel, uncomment the hx-* form below #}
+      <button type="button"
+              class="c-modal__x"
+              onclick="this.closest('dialog')?.close()"
+              aria-label="Close"
+              style="background:none;border:none;font-size:1.25rem;cursor:pointer">×</button>
+
+      {# If you prefer cancel to refresh the list, use this instead of the simple close button:
       <button type="button"
               class="c-modal__x"
               hx-get="{% url 'orgs:sites-block' org_id=org.id %}"
-              hx-target="#org-  sites-block"
+              hx-target="#sites-block"
               hx-swap="outerHTML"
-              hx-on="htmx:afterRequest: this.closest('dialog')?.close()"
-              aria-label="Close">×</button>
+              onclick="this.closest('dialog')?.close()"
+              aria-label="Close"
+              style="background:none;border:none;font-size:1.25rem;cursor:pointer">×</button>
+      #}
     </div>
 
-    {% if form.non_field_errors %}
-      <div class="alert alert-danger">{{ form.non_field_errors }}</div>
-    {% endif %}
+    <div style="flex:1 1 auto;overflow:auto;padding:12px 16px">
+      {% if form.non_field_errors %}
+        <div class="alert alert-danger">{{ form.non_field_errors }}</div>
+      {% endif %}
 
-    <div class="grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-      <div class="field">
-        <label for="{{ form.name.id_for_label }}">Site name</label>
-        {{ form.name }}
-        {% if form.name.errors %}<div class="error">{{ form.name.errors }}</div>{% endif %}
-      </div>
+      <div class="grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="field">
+          <label for="{{ form.name.id_for_label }}">Site name</label>
+          {{ form.name }}
+          {% if form.name.errors %}<div class="error">{{ form.name.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.timezone.id_for_label }}">Time zone</label>
-        {{ form.timezone }}
-        {% if form.timezone.errors %}<div class="error">{{ form.timezone.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.timezone.id_for_label }}">Time zone</label>
+          {{ form.timezone }}
+          {% if form.timezone.errors %}<div class="error">{{ form.timezone.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.essential_service.id_for_label }}">Essential service</label>
-        {{ form.essential_service }}
-        {% if form.essential_service.errors %}<div class="error">{{ form.essential_service.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.essential_service.id_for_label }}">Essential service</label>
+          {{ form.essential_service }}
+          {% if form.essential_service.errors %}<div class="error">{{ form.essential_service.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.network_role.id_for_label }}">Network role</label>
-        {{ form.network_role }}
-        {% if form.network_role.errors %}<div class="error">{{ form.network_role.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.network_role.id_for_label }}">Network role</label>
+          {{ form.network_role }}
+          {% if form.network_role.errors %}<div class="error">{{ form.network_role.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.eic_code.id_for_label }}">EIC code</label>
-        {{ form.eic_code }}
-        {% if form.eic_code.errors %}<div class="error">{{ form.eic_code.errors }}</div>{% endif %}
-      </div>
-      <div></div>
+        <div class="field">
+          <label for="{{ form.eic_code.id_for_label }}">EIC code</label>
+          {{ form.eic_code }}
+          {% if form.eic_code.errors %}<div class="error">{{ form.eic_code.errors }}</div>{% endif %}
+        </div>
+        <div></div>
 
-      <div class="field" style="grid-column:1/-1">
-        <label for="{{ form.address_line1.id_for_label }}">Address line 1</label>
-        {{ form.address_line1 }}
-        {% if form.address_line1.errors %}<div class="error">{{ form.address_line1.errors }}</div>{% endif %}
-      </div>
+        <div class="field" style="grid-column:1/-1">
+          <label for="{{ form.address_line1.id_for_label }}">Address line 1</label>
+          {{ form.address_line1 }}
+          {% if form.address_line1.errors %}<div class="error">{{ form.address_line1.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field" style="grid-column:1/-1">
-        <label for="{{ form.address_line2.id_for_label }}">Address line 2</label>
-        {{ form.address_line2 }}
-        {% if form.address_line2.errors %}<div class="error">{{ form.address_line2.errors }}</div>{% endif %}
-      </div>
+        <div class="field" style="grid-column:1/-1">
+          <label for="{{ form.address_line2.id_for_label }}">Address line 2</label>
+          {{ form.address_line2 }}
+          {% if form.address_line2.errors %}<div class="error">{{ form.address_line2.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.city.id_for_label }}">Town/City</label>
-        {{ form.city }}
-        {% if form.city.errors %}<div class="error">{{ form.city.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.city.id_for_label }}">Town/City</label>
+          {{ form.city }}
+          {% if form.city.errors %}<div class="error">{{ form.city.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.postcode.id_for_label }}">Postcode</label>
-        {{ form.postcode }}
-        {% if form.postcode.errors %}<div class="error">{{ form.postcode.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.postcode.id_for_label }}">Postcode</label>
+          {{ form.postcode }}
+          {% if form.postcode.errors %}<div class="error">{{ form.postcode.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.country_code.id_for_label }}">Country (ISO-2)</label>
-        {{ form.country_code }}
-        {% if form.country_code.errors %}<div class="error">{{ form.country_code.errors }}</div>{% endif %}
-      </div>
-      <div></div>
+        <div class="field">
+          <label for="{{ form.country_code.id_for_label }}">Country (ISO-2)</label>
+          {{ form.country_code }}
+          {% if form.country_code.errors %}<div class="error">{{ form.country_code.errors }}</div>{% endif %}
+        </div>
+        <div></div>
 
-      <div class="field">
-        <label for="{{ form.contact_name.id_for_label }}">Primary contact – name</label>
-        {{ form.contact_name }}
-        {% if form.contact_name.errors %}<div class="error">{{ form.contact_name.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.contact_name.id_for_label }}">Primary contact – name</label>
+          {{ form.contact_name }}
+          {% if form.contact_name.errors %}<div class="error">{{ form.contact_name.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.contact_role.id_for_label }}">Primary contact – role</label>
-        {{ form.contact_role }}
-        {% if form.contact_role.errors %}<div class="error">{{ form.contact_role.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.contact_role.id_for_label }}">Primary contact – role</label>
+          {{ form.contact_role }}
+          {% if form.contact_role.errors %}<div class="error">{{ form.contact_role.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.contact_email.id_for_label }}">Primary contact – email</label>
-        {{ form.contact_email }}
-        {% if form.contact_email.errors %}<div class="error">{{ form.contact_email.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.contact_email.id_for_label }}">Primary contact – email</label>
+          {{ form.contact_email }}
+          {% if form.contact_email.errors %}<div class="error">{{ form.contact_email.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.contact_phone.id_for_label }}">Primary contact – phone</label>
-        {{ form.contact_phone }}
-        {% if form.contact_phone.errors %}<div class="error">{{ form.contact_phone.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.contact_phone.id_for_label }}">Primary contact – phone</label>
+          {{ form.contact_phone }}
+          {% if form.contact_phone.errors %}<div class="error">{{ form.contact_phone.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.ooh_phone.id_for_label }}">Out-of-hours phone</label>
-        {{ form.ooh_phone }}
-        {% if form.ooh_phone.errors %}<div class="error">{{ form.ooh_phone.errors }}</div>{% endif %}
-      </div>
+        <div class="field">
+          <label for="{{ form.ooh_phone.id_for_label }}">Out-of-hours phone</label>
+          {{ form.ooh_phone }}
+          {% if form.ooh_phone.errors %}<div class="error">{{ form.ooh_phone.errors }}</div>{% endif %}
+        </div>
 
-      <div class="field">
-        <label for="{{ form.dpo_email.id_for_label }}">DPO / privacy email</label>
-        {{ form.dpo_email }}
-        {% if form.dpo_email.errors %}<div class="error">{{ form.dpo_email.errors }}</div>{% endif %}
+        <div class="field">
+          <label for="{{ form.dpo_email.id_for_label }}">DPO / privacy email</label>
+          {{ form.dpo_email }}
+          {% if form.dpo_email.errors %}<div class="error">{{ form.dpo_email.errors }}</div>{% endif %}
+        </div>
       </div>
     </div>
 
-    <div class="c-modal__footer">
+    <div class="c-modal__footer" style="display:flex;gap:.5rem;justify-content:flex-end;border-top:1px solid #eee;margin-top:12px;padding:12px 16px">
       <button type="submit" class="btn btn-primary">Save changes</button>
 
-      {# Cancel: refresh sites list then close #}
-      <button type="button"
-              class="btn"
+      <button type="button" class="btn" onclick="document.getElementById('site-edit-modal')?.close()">Cancel</button>
+      {# If you want cancel to also refresh sites (not usually needed):
+      <button type="button" class="btn"
               hx-get="{% url 'orgs:sites-block' org_id=org.id %}"
               hx-target="#sites-block"
               hx-swap="outerHTML"
-              hx-on="htmx:afterRequest: this.closest('dialog')?.close()">Cancel</button>
+              onclick="document.getElementById('site-edit-modal')?.close()">Cancel</button>
+      #}
     </div>
   </form>
 
   <style>
-    .c-modal { border: none; border-radius: 12px; padding: 0; }
+    .c-modal { border: none; border-radius: 12px; }
     .c-modal::backdrop { background: rgba(0,0,0,.35); }
-    .c-modal__header, .c-modal__footer { padding: 12px 16px; }
-    .c-modal__header { display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #eee; }
     .c-modal__title { margin:0; font-size:1.1rem; }
-    .c-modal__x { background:none; border:none; font-size:1.25rem; cursor:pointer; }
     .field label { display:block; font-size:.9rem; color:#555; margin-bottom:4px; }
     .field input, .field select { width:100%; padding:.5rem; border:1px solid #ced4da; border-radius:.5rem; }
     .error { color:#b91c1c; font-size:.85rem; margin-top:4px; }
-    .c-modal__footer { display:flex; gap:.5rem; justify-content:flex-end; border-top:1px solid #eee; margin-top:12px; }
   </style>
 
   <script>
-    (function(dlg){
-      if (!dlg) return;
-      dlg.addEventListener('close', () => dlg.remove());
-    })(document.currentScript.closest('dialog'));
+    // Close the modal after the sites list is swapped in
+    (function(){
+      const dlg = document.getElementById('site-edit-modal');
+      function onAfterSwap(e){
+        if (e.detail && e.detail.target && e.detail.target.id === 'sites-block') {
+          dlg?.close();
+          document.removeEventListener('htmx:afterSwap', onAfterSwap);
+        }
+      }
+      document.addEventListener('htmx:afterSwap', onAfterSwap);
+    })();
   </script>
 </dialog>
